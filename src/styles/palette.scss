@@ -1,0 +1,83 @@
+// Color Palette
+
+:root {
+    // Font Stack
+    --font-one: "Inter", sans-serif;
+    --font-two: "Inconsolata", monospace;
+
+    // Primary
+
+    // Purple
+    --purple-one: hsl(245,100%,27%);
+    --purple-two: hsl(245, 6%, 0%);
+    --purple-three: hsl(245,79%,52%);
+    --purple-four: hsl(245,92%,60%);
+    --purple-five: hsl(243,94%,66%);
+    --purple-six: hsl(243,94%,70%);
+    --purple-seven: hsl(240,95%,76%);
+    --purple-eight: hsl(238,94%,81%);
+    --purple-nine: hsl(238,100%,88%);
+    --purple-ten: hsl(240,100%,95%);
+
+    // Teal
+    --teal-one: hsl(170,97%,15%);
+    --teal-two: hsl(168,80%,23%);
+    --teal-three: hsl(166,72%,28%);
+    --teal-four: hsl(164,71%,34%);
+    --teal-five: hsl(162,63%,41%);
+    --teal-six: hsl(160,51%,49%);
+    --teal-seven: hsl(158,58%,62%);
+    --teal-eight: hsl(156,73%,74%);
+    --teal-nine: hsl(154,75%,87%);
+    --teal-ten: hsl(152,68%,96%);
+
+    // Neutrals
+    --blue-grey-one: hsl(209,61%,16%);
+    --blue-grey-two: hsl(211,39%,23%);
+    --blue-grey-three: hsl(209,34%,30%);
+    --blue-grey-four: hsl(209,28%,39%);
+    --blue-grey-five: hsl(210,22%,49%);
+    --blue-grey-six: hsl(209,23%,60%);
+    --blue-grey-seven: hsl(211,27%,70%);
+    --blue-grey-eight: hsl(210,31%,80%);
+    --blue-grey-nine: hsl(212,33%,89%);
+    --blue-grey-ten: hsl(210,36%,96%);
+
+    // Supporting
+
+    // Light Blue (Vivid)
+    --light-blue-one: hsl(204,96%,27%);
+    --light-blue-two: hsl(203,87%,34%);
+    --light-blue-three: hsl(202,83%,41%);
+    --light-blue-four: hsl(201,79%,46%);
+    --light-blue-five: hsl(199,84%,55%);
+    --light-blue-six: hsl(197,92%,61%);
+    --light-blue-seven: hsl(196,94%,67%);
+    --light-blue-eight: hsl(195,97%,75%);
+    --light-blue-nine: hsl(195,100%,85%);
+    --light-blue-ten: hsl(195,100%,95%);
+  
+    // Red (Vivid)
+    --red-one: hsl(348,94%,20%);
+    --red-two: hsl(350,94%,28%);
+    --red-three: hsl(352,90%,35%);
+    --red-four: hsl(354,85%,44%);
+    --red-five: hsl(356,75%,53%);
+    --red-six: hsl(360,83%,62%);
+    --red-seven: hsl(360,91%,69%);
+    --red-eight: hsl(360,100%,80%);
+    --red-nine: hsl(360,100%,87%);
+    --red-ten: hsl(360,100%,95%);
+
+    // Yellow (Vivid)
+    --yellow-one: hsl(15,86%,30%);
+    --yellow-two: hsl(22,82%,39%);
+    --yellow-three: hsl(29,80%,44%);
+    --yellow-four: hsl(36,77%,49%);
+    --yellow-five: hsl(42,87%,55%);
+    --yellow-six: hsl(44,92%,63%);
+    --yellow-seven: hsl(48,94%,68%);
+    --yellow-eight: hsl(48,95%,76%);
+    --yellow-nine: hsl(48,100%,88%);
+    --yellow-ten: hsl(49,100%,96%);
+}
