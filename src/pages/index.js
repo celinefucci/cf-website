@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Nav from "../components/nav"
+import NavWrapper from "./../components/nav"
 
 //import NavWrapper from "../components/nav"
 
@@ -18,7 +18,7 @@ const NavLine = styled.hr`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Nav />
+    <NavWrapper />
     <NavLine />
   </Layout>
 )
