@@ -1,16 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import NavWrapper from "../components/nav"
-
-const ImgWrapper = styled.div`
-  max-width: 100px;
-  margin-bottom: 1.45rem;
-`
+import NavWrapper from "../components/nav.js";
 
 const NavLine = styled.hr`
   margin-top: 21px;
@@ -22,13 +15,8 @@ const NavLine = styled.hr`
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Home" />
     <NavWrapper>
-      <SEO title="Home" />
-      <a href="http://people.sunyit.edu/~fuccic/">Portfolio</a>
-      <ImgWrapper>
-        <Image />
-      </ImgWrapper>
-      <Link to="/page-2/">Go to page 2</Link>
     </NavWrapper>
     <NavLine />
   </Layout>
