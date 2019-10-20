@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import "../styles/palette.scss"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
-import resume from "../images/CelineFucci_Resume2019.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import resume from "../images/CelineFucci_Resume2019.pdf"
 
 
 const HeaderWrapper = styled.div`
