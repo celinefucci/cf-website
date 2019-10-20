@@ -16,10 +16,19 @@ import Header from "./header"
 import Footer from "./footer"
 import { GlobalStyle } from "../theme/globalStyle"
 
+// Font Awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faUser, faFileCode, faPhoneAlt, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faUser, faFileCode, faPhoneAlt, faArrowDown)
+
 const ContentWrapper = styled.div`
   margin: 0 auto;
   max-width: 960;
-  padding: 0px 1.0875rem 1.45rem;
+
+  // HORIZONTAL LINE LENGTH IN INDEX.JS
+  //padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
 `
 
