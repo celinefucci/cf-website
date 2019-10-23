@@ -1,9 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import "../styles/palette.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import resume from "../images/CelineFucci_Resume2019.pdf"
 
 
@@ -34,7 +36,7 @@ const StyledLink = styled(Link)`
 
 const ResumeButton = styled.button`
     cursor: pointer;
-    width: 103px;
+    width: 110px;
     height: 35px;
     background-color: transparent;
 
