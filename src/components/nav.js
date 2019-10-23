@@ -64,15 +64,15 @@ const Nav = () => (
   <React.Fragment>
     <NavWrapper>
         <div>
-          <FontAwesomeIcon icon="user" size="lg" className="link-icon" />
+          <FontAwesomeIcon icon="user" fixedWidth size="lg" className="link-icon" />
           <Link to="/page-2/" className="link-name">About</Link>
         </div>
         <div>
-          <FontAwesomeIcon icon="file-code" size="lg" className="link-icon" />
+          <FontAwesomeIcon icon="file-code" fixedWidth size="lg" className="link-icon" />
           <Link to="/page-2/" className="link-name">Work</Link>
         </div>
         <div>
-          <FontAwesomeIcon icon="phone-alt" size="lg" className="link-icon" />
+          <FontAwesomeIcon icon="phone-alt" fixedWidth size="lg" className="link-icon" />
           <Link to="/page-2/" className="link-name">Contact</Link>
         </div>
     </NavWrapper> 
