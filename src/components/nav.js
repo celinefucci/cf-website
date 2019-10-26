@@ -9,11 +9,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // Mobile
 const NavWrapper = styled.nav`
     // TODO - Media query
+
+    @media (max-width: 768px) {
+      min-height: 58vh;
+    }
+
     //@media (max-width: 768px) {
         display: flex;
         justify-content: space-around;
 
-        min-height: 70vh;
+        min-height: 65vh;
 
         .link-name {
             
