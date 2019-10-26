@@ -13,7 +13,11 @@ const NavWrapper = styled.nav`
         display: flex;
         justify-content: space-around;
 
+        min-height: 70vh;
+
         .link-name {
+            
+            
             font-weight: 500;
             padding-bottom: 20px;
 
@@ -48,6 +52,12 @@ const NavWrapper = styled.nav`
             margin: auto;
             margin-bottom: 20px;
             color: var(--blue-grey-three);
+            
+        }
+
+        .test {
+          margin-top: auto;
+          
         }
     //}
 `
@@ -63,15 +73,15 @@ const NavLine = styled.hr`
 const Nav = () => (
   <React.Fragment>
     <NavWrapper>
-        <div>
+        <div className="test">
           <FontAwesomeIcon icon="user" size="lg" className="link-icon" />
           <Link to="/page-2/" className="link-name">About</Link>
         </div>
-        <div>
+        <div className="test">
           <FontAwesomeIcon icon="file-code" size="lg" className="link-icon" />
           <Link to="/page-2/" className="link-name">Work</Link>
         </div>
-        <div>
+        <div className="test">
           <FontAwesomeIcon icon="phone-alt" size="lg" className="link-icon" />
           <Link to="/page-2/" className="link-name">Contact</Link>
         </div>

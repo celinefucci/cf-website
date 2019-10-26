@@ -8,7 +8,7 @@ const FooterWrapper = styled.div`
   padding: 1.45rem 1.0875rem;
 
   // Keep in mind vh issue on mobile - Kevin Powell video
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
 
