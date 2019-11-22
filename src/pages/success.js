@@ -1,10 +1,11 @@
 import React from "react"
+import Layout from "../components/layout"
 
 const SuccessPage = () => (
-    <div>
-        <h2>You dropped me a new line</h2>
-        <h4> Congrats, I will be sure to check it out when i can and add a reply</h4>
-    </div>
+    <Layout>
+        <h1>Thank you!</h1>
+        <p>This is a custom thank you page for form submissions</p>
+    </Layout>
 )
   
 export default SuccessPage
