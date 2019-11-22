@@ -88,7 +88,7 @@ const Nav = () => (
         </div>
         <div className="test">
           <FontAwesomeIcon icon="phone-alt" size="lg" className="link-icon" />
-          <Link to="/page-2/" className="link-name">Contact</Link>
+          <Link to="/contact/" className="link-name">Contact</Link>
         </div>
     </NavWrapper> 
     <NavLine />
