@@ -6,10 +6,15 @@ import "../styles/palette.scss"
 const Contactform = () => (
     <form 
         name="contact" 
-        method="post"
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        netlify-honeypot="bot-field"
     >
+        <p style={{ visibility: 'hidden' }}>
+            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <input name="name" placeholder="Your Name" type="text" />
         <input name="email" placeholder="name@name.com" type="email" />
         <textarea name="message" />
