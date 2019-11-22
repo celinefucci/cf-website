@@ -6,26 +6,32 @@ import "../styles/palette.scss"
 const Contactform = () => (
     <form 
         name="contact" 
-        method="POST"
-        netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true"
+        method="post"
+        action="/success"
         data-netlify="true"
-        netlify-honeypot="bot-field"
+        data-netlify-honeypot="bot-field"
     >
-        {/* reCAPTCHA */}
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-            <label 
-                htmlFor="bot-field">Don’t fill this out:{' '}
-                <input name="bot-field" />
-            </label>
-        </p>
+        <input type="hidden" name="bot-field" />
 
+        <div>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="name" />
+        </div>
 
-        <input name="name" placeholder="Your Name" type="text" />
-        <input name="email" placeholder="name@name.com" type="email" />
-        <textarea name="message" />
-        <button>Submit</button>
+        <div>
+            <label htmlFor="email">Email</label>
+            <input type="text" name="email" id="email" />
+        </div>
+
+        <div>
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" rows="6" required />
+        </div>
+
+        <div>
+            <input type="submit" value="Drop a line" />
+            <input type="reset" value="Eraser" />
+        </div>
     </form>
 )
 
