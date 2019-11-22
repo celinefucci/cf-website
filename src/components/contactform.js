@@ -12,9 +12,16 @@ const Contactform = () => (
         data-netlify="true"
         netlify-honeypot="bot-field"
     >
-        <p style={{ visibility: 'hidden' }}>
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        {/* reCAPTCHA */}
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+            <label 
+                htmlFor="bot-field">Don’t fill this out:{' '}
+                <input name="bot-field" />
+            </label>
         </p>
+
+
         <input name="name" placeholder="Your Name" type="text" />
         <input name="email" placeholder="name@name.com" type="email" />
         <textarea name="message" />
