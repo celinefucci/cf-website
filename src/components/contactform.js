@@ -80,9 +80,9 @@ const ContactForm = () => (
         name="contact"
         method="post"
         action="/success/"
+        data-netlify-recaptcha="true"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>
