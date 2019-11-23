@@ -8,8 +8,6 @@ import ContactForm from "../components/contactform"
 const ContactPage = () => (
     <Layout>
           <SEO title="Contact" />
-          <h1>Hi!</h1>
-          <p>This is the contact page</p>
           <ContactForm />
     </Layout>       
 )
