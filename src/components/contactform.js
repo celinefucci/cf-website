@@ -40,7 +40,7 @@ const ContactForm = () => (
           </label>
         </p>
         {/* TODO - RECAPTCHA */}
-        <div data-netlify-recaptcha="true"></div>
+        {/* <div data-netlify-recaptcha="true"></div> */}
         <p>
           <button type="submit">Send</button>
         </p>
