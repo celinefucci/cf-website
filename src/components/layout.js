@@ -19,10 +19,15 @@ import { GlobalStyle } from "../theme/globalStyle"
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faUser, faFileCode, faPhoneAlt, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faUser, faFileCode, faPhoneAlt, faArrowDown)
+import { faUser, faFileCode, faPhoneAlt, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faLinkedinIn, faSpotify, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+
+library.add(fas, far, fab, faUser, faFileCode, faPhoneAlt, faArrowDown, faTwitter, faLinkedinIn, faSpotify, faEnvelope, faGithub)
 
 const ContentWrapper = styled.div`
   margin: 0 auto;

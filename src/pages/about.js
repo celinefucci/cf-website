@@ -5,12 +5,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
-const SecondPage = () => (
+const AboutPage = () => (
   <Layout>
-    <SEO title="Page Two" />
+    <SEO title="About" />
     <h1>Hi!</h1>
     <p>This page is in development</p>
   </Layout>
 )
 
-export default SecondPage
+export default AboutPage

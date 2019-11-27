@@ -11,7 +11,7 @@ const NavWrapper = styled.nav`
     // TODO - Media query
 
     @media (max-width: 768px) {
-      min-height: 58vh;
+      min-height: 72vh;
     }
 
     //@media (max-width: 768px) {
@@ -80,11 +80,11 @@ const Nav = () => (
     <NavWrapper>
         <div className="test">
           <FontAwesomeIcon icon="user" size="lg" className="link-icon" />
-          <Link to="/page-2/" className="link-name">About</Link>
+          <Link to="/about/" className="link-name">About</Link>
         </div>
         <div className="test">
           <FontAwesomeIcon icon="file-code" size="lg" className="link-icon" />
-          <Link to="/page-2/" className="link-name">Work</Link>
+          <Link to="/work/" className="link-name">Work</Link>
         </div>
         <div className="test">
           <FontAwesomeIcon icon="phone-alt" size="lg" className="link-icon" />

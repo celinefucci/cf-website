@@ -10,7 +10,7 @@ import resume from "../images/CelineFucci_Resume2019.pdf"
 
 
 const HeaderWrapper = styled.div`
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.5rem;
   display: flex;    
   flex-direction: row;
   justify-content: space-between;

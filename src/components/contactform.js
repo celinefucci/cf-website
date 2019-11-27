@@ -3,8 +3,16 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import "../styles/palette.scss"
 
+
+const Form = styled.form`
+    margin: 0 auto;
+    max-width: 960;
+    // Padding = Top, Right, Bottom, Left
+    padding: 1.45rem 1.0875rem;
+`
+
 const ContactForm = () => (
-      <form
+      <Form
         name="contact"
         method="post"
         action="/success/"
@@ -43,7 +51,7 @@ const ContactForm = () => (
         <p>
           <button type="submit">Send</button>
         </p>
-      </form>
+      </Form>
 )
 
 export default ContactForm

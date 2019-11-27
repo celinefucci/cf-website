@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        padding: 0;
         margin: 0;
         font-family: var(--primary-font);
         background-color: var(--blue-grey-nine);

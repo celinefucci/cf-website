@@ -5,12 +5,12 @@ import "../styles/palette.scss"
 const FooterWrapper = styled.div`
 
   @media (max-width: 768px) {
-    min-height: 21vh;
+    min-height: 16vh;
   }
 
   margin: 0 auto;
   max-width: 960;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.10rem 1.0875rem;
 
   // Keep in mind vh issue on mobile - Kevin Powell video
   min-height: 14vh;
@@ -28,8 +28,7 @@ const FooterText = styled.footer`
 const Footer = () => (
   <FooterWrapper>
     <FooterText>
-      © Celine Fucci. Made in New York.  
-      {` `}
+      Celine Fucci © 2019 
     </FooterText>
   </FooterWrapper>
 )
