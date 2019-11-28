@@ -12,8 +12,6 @@ const ContactPage = () => (
           <SEO title="Contact" />
           <ContactInfo />
           <ContactForm />
-          {/* Temporary style */}
-          <h3 style={{padding: 1.0875 + 'rem'}}>Get in Touch</h3>
     </Layout> 
           
 )

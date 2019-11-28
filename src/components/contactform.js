@@ -5,10 +5,9 @@ import "../styles/palette.scss"
 
 
 const Form = styled.form`
-    margin: 0 auto;
-    max-width: 960;
     // Padding = Top, Right, Bottom, Left
-    padding: 1.45rem 1.0875rem;
+    padding-left: 1.0875rem;
+    
 `
 
 const ContactForm = () => (

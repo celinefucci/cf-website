@@ -27,11 +27,11 @@ const SocialWrapper = styled.div`
 `
 
 const Social = () => (
+    // Make the a href a button tag?
   <SocialWrapper>
     <a href="https://www.linkedin.com/in/celinefucci/" className="social-icon"><FontAwesomeIcon icon={['fab', 'linkedin-in']} size="md" className="fa-fw" /></a>
     <a href="https://github.com/celinefucci" className="social-icon"><FontAwesomeIcon icon={['fab', 'github']} size="md" className="fa-fw" /></a>
     <a href="https://twitter.com/cfooch96" className="social-icon"><FontAwesomeIcon icon={['fab', 'twitter']} size="md" className="fa-fw" /></a>
-    <a href="mailto:celinefucci@gmail.com" className="social-icon"><FontAwesomeIcon icon={['far', 'envelope']} size="md" className="fa-fw" /></a>
   </SocialWrapper>
 )
 
