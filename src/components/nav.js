@@ -11,7 +11,7 @@ const NavWrapper = styled.nav`
     // TODO - Media query
 
     @media (max-width: 768px) {
-      min-height: 72vh;
+      min-height: 62vh;
     }
 
     //@media (max-width: 768px) {

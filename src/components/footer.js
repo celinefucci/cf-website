@@ -5,7 +5,7 @@ import "../styles/palette.scss"
 const FooterWrapper = styled.div`
 
   @media (max-width: 768px) {
-    min-height: 16vh;
+    min-height: 14vh;
   }
 
   margin: 0 auto;
