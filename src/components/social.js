@@ -17,7 +17,7 @@ const SocialWrapper = styled.div`
     .social-icon {
         display: inline-block;
         //margin-bottom: 20px;
-        color: var(--purple-five);
+        color: var(--purple-six);
         background-color: var(--purple-nine);
         border-radius: 50%;
         padding: 8px;
