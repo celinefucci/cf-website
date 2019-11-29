@@ -31,13 +31,9 @@ const Form = styled.form`
     }
 
     // Removes inner shadow on mobile Safari
-    input[type=text], input[type="email"] {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-    }
-
-    textarea[type="submit"] {
+    input[type=text],
+    input[type="email"],
+    textarea {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
