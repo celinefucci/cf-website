@@ -29,6 +29,19 @@ const Form = styled.form`
         border: 2px solid var(--blue-grey-three);
     }
 
+    // Removes inner shadow on mobile Safari
+    input[type=text], input[type="email"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    textarea[type="submit"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
     textarea {
         margin: 6px 0;
         width: 100%;
@@ -65,7 +78,7 @@ const Form = styled.form`
     button[type=submit]:hover {
         //color: var(--purple-six);
         transition: all 0.3s ease 0s;
-        //box-shadow: inset 0 0 0 3px var(--purple-eight);
+        box-shadow: inset 0 0 0 3px var(--purple-eight);
     } 
 `
 
