@@ -23,8 +23,6 @@ const Form = styled.form`
         font-size: 12px;
         background-color: var(--blue-grey-nine);
         font-family: var(--secondary-font);
-        vertical-align: middle;
-        box-shadow: none;
     }
 
     input:focus {
@@ -42,7 +40,6 @@ const Form = styled.form`
         resize: none;
         font-family: var(--secondary-font);
         font-size: 12px;
-        box-shadow: none;
     }
 
     textarea:focus {
@@ -68,7 +65,7 @@ const Form = styled.form`
     button[type=submit]:hover {
         //color: var(--purple-six);
         transition: all 0.3s ease 0s;
-        box-shadow: inset 0 0 0 3px var(--purple-eight);
+        //box-shadow: inset 0 0 0 3px var(--purple-eight);
     } 
 `
 
