@@ -18,13 +18,13 @@ const Form = styled.form`
         width: 100%;
         padding: 12px 20px;
         margin: 6px 0;
-        box-sizing: border-box;
         border: 2px solid var(--blue-grey-eight);
         border-radius: 4px;
         font-size: 12px;
         background-color: var(--blue-grey-nine);
         font-family: var(--secondary-font);
         vertical-align: middle;
+        box-shadow: none;
     }
 
     input:focus {
@@ -36,13 +36,13 @@ const Form = styled.form`
         width: 100%;
         height: 150px;
         padding: 12px 20px;
-        box-sizing: border-box;
         border: 2px solid var(--blue-grey-eight);
         border-radius: 4px;
         background-color: var(--blue-grey-nine);
         resize: none;
         font-family: var(--secondary-font);
         font-size: 12px;
+        box-shadow: none;
     }
 
     textarea:focus {
