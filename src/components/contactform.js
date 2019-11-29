@@ -7,6 +7,7 @@ import "../styles/palette.scss"
 const Form = styled.form`
     // Padding = Top, Right, Bottom, Left
     padding-left: 1.0875rem;
+    padding-right: 1.0875rem;
 
     label {
         color: var(--blue-grey-three);
