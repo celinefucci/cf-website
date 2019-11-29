@@ -7,7 +7,69 @@ import "../styles/palette.scss"
 const Form = styled.form`
     // Padding = Top, Right, Bottom, Left
     padding-left: 1.0875rem;
-    
+
+    label {
+        color: var(--blue-grey-three);
+        font-weight: bold;
+        letter-spacing: .05em;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        border: 2px solid var(--blue-grey-eight);
+        border-radius: 4px;
+        font-size: 12px;
+        background-color: var(--blue-grey-nine);
+        font-family: var(--secondary-font);
+        vertical-align: middle;
+    }
+
+    input:focus {
+        border: 2px solid var(--blue-grey-three);
+    }
+
+    textarea {
+        margin: 6px 0;
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid var(--blue-grey-eight);
+        border-radius: 4px;
+        background-color: var(--blue-grey-nine);
+        resize: none;
+        font-family: var(--secondary-font);
+        font-size: 12px;
+    }
+
+    textarea:focus {
+        border: 2px solid var(--blue-grey-three);
+    }
+
+    button[type=submit] {
+        color: var(--blue-grey-three);
+        background-color: transparent;
+        border: 2px solid var(--blue-grey-three);
+        font-size: 16px;
+
+       // border: none;
+        border-radius: 4px;
+        padding: 10px 28px;
+        text-decoration: none;
+        margin: 2px 2px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        font-weight: bold;
+    }
+
+    button[type=submit]:hover {
+        //color: var(--purple-six);
+        transition: all 0.3s ease 0s;
+        box-shadow: inset 0 0 0 3px var(--purple-eight);
+    } 
 `
 
 const ContactForm = () => (
@@ -26,21 +88,21 @@ const ContactForm = () => (
         </p>
         <p>
           <label>
-            Your name:
+            Your Name
             <br />
             <input type="text" name="name" />
           </label>
         </p>
         <p>
           <label>
-            Your email:
+            Your Email
             <br />
             <input type="email" name="email" />
           </label>
         </p>
         <p>
           <label>
-            Message:
+            Message
             <br />
             <textarea name="message" />
           </label>
