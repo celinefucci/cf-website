@@ -5,12 +5,12 @@ import "../styles/palette.scss"
 const FooterWrapper = styled.div`
 
   @media (max-width: 768px) {
-    min-height: 18vh;
+    min-height: 15vh;
   }
 
   margin: 0 auto;
   max-width: 960;
-  padding: 1.10rem 1.0875rem;
+  padding: 0.6rem 1.0875rem;
 
   // Keep in mind vh issue on mobile - Kevin Powell video
   min-height: 14vh;
