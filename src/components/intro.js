@@ -25,6 +25,7 @@ const IntroText = styled.div`
         letter-spacing: 3px;
         //color: var(--purple-six); 
         color: var(--light-blue-seven); 
+
     }
     
     h1:after {
@@ -33,17 +34,26 @@ const IntroText = styled.div`
         //color: rgba(255,0,0,0.5); 
         //color: var(--teal-seven);  
         color: var(--purple-six);
+
+        // TODO
+        // color: transparent;
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: black;
+        //z-index: -1;
+
+
     }
 
     h4 {
         font-family: var(--secondary-font);
+        color: var(--blue-grey-three);
     }
 `
 
 const Intro = () => (
     <IntroText>
         <h1>I'm Celine</h1>
-        <h4>UI Designer & Technologist</h4>
+        <h4>UI Designer & Creative Technologist</h4>
         {/* <p>Through my work, I strive to help others, learn new things every day, and be a productive asset to a team</p> */}
     </IntroText>
 )

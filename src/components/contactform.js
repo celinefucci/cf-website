@@ -47,6 +47,8 @@ const Form = styled.form`
         border: 2px solid var(--blue-grey-eight);
         border-radius: 4px;
         background-color: var(--blue-grey-nine);
+
+        // Get rid of resize on mobile
         resize: none;
         font-family: var(--secondary-font);
         font-size: 12px;
@@ -66,7 +68,7 @@ const Form = styled.form`
         border-radius: 4px;
         padding: 10px 28px;
         text-decoration: none;
-        margin: 2px 2px;
+        margin: 0 2px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
         font-weight: bold;
