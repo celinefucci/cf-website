@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import "../styles/palette.scss"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Form = styled.form`
     // Padding = Top, Right, Bottom, Left
@@ -17,14 +18,15 @@ const Form = styled.form`
 
     input {
         width: 100%;
-        padding: 12px 20px;
+        padding: 18px 20px;
         margin: 6px 0;
-        border: 2px solid var(--blue-grey-eight);
+        border: 1px solid var(--blue-grey-eight);
         border-radius: 4px;
         font-size: 12px;
         background-color: var(--blue-grey-nine);
         font-family: var(--secondary-font);
     }
+
 
     input:focus {
         border: 2px solid var(--blue-grey-three);
@@ -42,14 +44,15 @@ const Form = styled.form`
     textarea {
         margin: 6px 0;
         width: 100%;
-        height: 150px;
+        height: 175px;
         padding: 12px 20px;
-        border: 2px solid var(--blue-grey-eight);
+        border: 1px solid var(--blue-grey-eight);
         border-radius: 4px;
         background-color: var(--blue-grey-nine);
 
         // Get rid of resize on mobile
         resize: none;
+
         font-family: var(--secondary-font);
         font-size: 12px;
     }
@@ -59,26 +62,46 @@ const Form = styled.form`
     }
 
     button[type=submit] {
-        color: var(--blue-grey-three);
+        color: var(--purple-six);
         background-color: transparent;
-        border: 2px solid var(--blue-grey-three);
+        border: 1px solid var(--purple-six);
         font-size: 16px;
-
-       // border: none;
         border-radius: 4px;
-        padding: 10px 28px;
+        padding: 12px 20px;
         text-decoration: none;
         margin: 0 2px;
         cursor: pointer;
-        transition: all 0.3s ease 0s;
+        transition: all 0.2s ease 0s;
         font-weight: bold;
+        width: 100%;
     }
 
     button[type=submit]:hover {
-        //color: var(--purple-six);
-        transition: all 0.3s ease 0s;
-        box-shadow: inset 0 0 0 3px var(--purple-eight);
+        color: var(--purple-ten);
+        background-color: var(--purple-six);
+        //border: none;
     } 
+
+    .send-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      line-height: 1;
+      align-items: center;
+      transition: all 0.2s ease 0s;
+    }
+
+    .send-button:hover {
+      .send-icon {
+        transform: rotate(45deg);
+        transition: all 0.2s ease 0s;
+      }
+    }
+
+    .send-icon {
+      transition: all 0.2s ease 0s;
+      margin-top: 1px;
+    }
 `
 
 const ContactForm = () => (
@@ -119,7 +142,7 @@ const ContactForm = () => (
         {/* TODO - RECAPTCHA */}
         {/* <div data-netlify-recaptcha="true"></div> */}
         <p>
-          <button type="submit">Send</button>
+          <button type="submit" className="send-button">Send Message<FontAwesomeIcon icon={['far', 'paper-plane']} size="lg" className="fa-fw send-icon" /></button>
         </p>
       </Form>
 )

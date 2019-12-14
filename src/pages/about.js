@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Image from "../components/image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,6 +10,10 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <h2 style={{padding: '1.0875rem', color: 'var(--blue-grey-three)'}}>A Quick Synopsis</h2>
+    {/* TODO */}
+    {/* <div style={{ maxWidth: `500px`, height: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div> */}
     <p style={{padding: '1.0875rem', color: 'var(--blue-grey-three)'}}>
       I've always been interested in technology, particularly with how applications looked and functioned, which is why I decided to pursue a degree in Interaction Design.
     </p>
