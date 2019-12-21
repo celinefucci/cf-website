@@ -22,7 +22,7 @@ const AboutWrapper = styled.div`
     font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
-    margin-top: 12px;
+    margin-top: 15px;
   }
 
   .story {
@@ -70,7 +70,7 @@ const AboutText = styled.p`
   color: var(--blue-grey-three);
   font-size: 14px;
   line-height: 1.8;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 `
 
 
