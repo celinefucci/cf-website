@@ -22,7 +22,7 @@ const AboutWrapper = styled.div`
     font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
-    margin-top: 0;
+    margin-top: 15px;
   }
 
   .story {
@@ -85,7 +85,7 @@ const AboutPage = () => (
       </AboutText>
     </AboutWrapper>
 
-    <div style={{ maxHeight: `450px`, height: '290px' }}>
+    <div style={{ maxHeight: '350px', height: '290px' }}>
       <Image />
     </div>
 

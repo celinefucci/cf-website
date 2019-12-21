@@ -26,7 +26,7 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Profile Picture" style={{maxHeight: '100%'}} imgStyle={{objectFit: 'contain'}} />
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Profile Picture" style={{ maxHeight: '100%', maxWidth: '100%', height: '500px', objectFit: 'fill' }} imgStyle={{objectFit: 'contain'}} />
 }
 
 export default Image
