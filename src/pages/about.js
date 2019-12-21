@@ -13,7 +13,7 @@ const AboutWrapper = styled.div`
 
   h1 {
     max-width: 250px;
-    margin-bottom: 40px;
+    margin-top: 50px;
     color: var(--purple-six);
     font-size: 40px;
   }
@@ -22,11 +22,11 @@ const AboutWrapper = styled.div`
     font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
-    margin-top: 15px;
+    margin-top: 12px;
   }
 
   .story {
-    margin-top: 50px;
+    margin-top: 70px;
     max-width: 147px;
   }
 
@@ -63,6 +63,7 @@ const AboutHeading = styled.h2`
   padding-bottom: 5px;
   max-width: 130px;
   font-family: var(--secondary-font);
+  margin-top: 60px;
 `
 
 const AboutText = styled.p`
@@ -85,7 +86,7 @@ const AboutPage = () => (
       </AboutText>
     </AboutWrapper>
 
-    <div style={{ maxHeight: '350px', height: '290px' }}>
+    <div>
       <Image />
     </div>
 
