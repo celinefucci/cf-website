@@ -85,7 +85,7 @@ const AboutPage = () => (
       </AboutText>
     </AboutWrapper>
 
-    <div style={{ maxHeight: `350px`, height: '300px' }}>
+    <div style={{ maxHeight: `450px`, height: '290px' }}>
       <Image />
     </div>
 
@@ -97,12 +97,12 @@ const AboutPage = () => (
       </AboutText>
       <AboutText>
         I really love design. Besides school projects, my first experience working in design
-        was during my summer internship at MetLife in 2017. I worked as a front-end developer
-        on a four-person team to overhaul an insurance application.
+        was during my summer internship at MetLife in 2017. As a front-end developer
+        on a four-person team, I was responsible for modernizing an outdated insurance application.
       </AboutText>
       <AboutText>
         My passion for staying current with the latest design trends, creating polished user interfaces, and 
-        building intuitive experiences make me a motivated product design technologist.
+        building intuitive experiences makes me a driven design technologist.
       </AboutText>
       <AboutText>
         In January 2020, I'll be doing some freelance work before I start Flatiron School's 
@@ -117,7 +117,7 @@ const AboutPage = () => (
       </AboutText>
       
       <div>
-        <AboutText className="about-email">Shoot me an email at </AboutText>
+        <AboutText className="about-email">Feel free to email at </AboutText>
         <span>
           <a href="mailto:celinefucci@gmail.com" className="email">
             celinefucci@gmail.com
