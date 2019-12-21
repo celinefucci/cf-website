@@ -26,7 +26,7 @@ const AboutWrapper = styled.div`
   }
 
   .story {
-    margin-top: 70px;
+    margin-top: 60px;
     max-width: 147px;
   }
 
@@ -70,6 +70,7 @@ const AboutText = styled.p`
   color: var(--blue-grey-three);
   font-size: 14px;
   line-height: 1.8;
+  margin-bottom: 25px;
 `
 
 
