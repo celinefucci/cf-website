@@ -22,7 +22,7 @@ const AboutWrapper = styled.div`
     font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
-    margin-top: 15px;
+    margin-top: 12px;
   }
 
   .story {
