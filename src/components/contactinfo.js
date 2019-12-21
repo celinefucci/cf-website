@@ -18,13 +18,13 @@ const ContactDetails = styled.div`
     }
 
     .heading-two {
-        margin-top: 75px;
+        margin-top: 60px;
         margin-bottom: 15px;
         max-width: 250px;
     }
 
     .heading-three {
-        margin-top: 75px;
+        margin-top: 60px;
         max-width: 185px;
     }
 
@@ -72,7 +72,7 @@ const ContactDetails = styled.div`
         font-size: 16px;
         border-radius: 4px;
         padding: 12px 20px;
-        margin-top: 10px;
+        margin-top: 25px;
         text-decoration: none;
         cursor: pointer;
         transition: all 0.2s ease 0s;
@@ -96,6 +96,14 @@ const ContactDetails = styled.div`
         transition: all 0.2s ease 0s;
         margin-left: 5px;
       }
+
+      hr {
+        margin-top: 70px;
+        max-width: 100%;
+        height: 1px;
+        border: 0;
+        background-color: var(--blue-grey-eight);
+      }
 `
 
 const ContactInfo = () => (
@@ -110,13 +118,14 @@ const ContactInfo = () => (
       <a href="https://twitter.com/cfooch96">Twitter</a>
     </span>
     <div>
-      or email me at{" "}
+      or email me at {" "}
       <span>
         <a href="mailto:celinefucci@gmail.com" className="email">
           celinefucci@gmail.com
         </a>
       </span>
     </div>
+    <hr />
 
     <h3 class="heading-two">need some tunes?</h3>
     <span>Music for designing, writing, coding, and gym time.</span>
@@ -131,6 +140,7 @@ const ContactInfo = () => (
             />
         </button>
     </Link>
+    <hr />
 
     <h3 class="heading-three">ask me a question</h3>
   </ContactDetails>
