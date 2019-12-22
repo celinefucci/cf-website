@@ -99,19 +99,19 @@ const MusicPage = () => (
           <h3>FEATURING:</h3>
 
           <div>
-            <FontAwesomeIcon icon="arrow-circle-right" size="sm" className="arrow-icon" />
+            <FontAwesomeIcon icon="compact-disc" size="sm" className="arrow-icon" />
             <p className="artist">Avicii</p>
           </div>
           <div>
-            <FontAwesomeIcon icon="arrow-circle-right" size="sm" className="arrow-icon" />
+            <FontAwesomeIcon icon="compact-disc" size="sm" className="arrow-icon" />
             <p className="artist">Cash Cash</p>
           </div>
           <div>
-            <FontAwesomeIcon icon="arrow-circle-right" size="sm" className="arrow-icon" />
+            <FontAwesomeIcon icon="compact-disc" size="sm" className="arrow-icon" />
             <p className="artist">Martin Garrix</p>
           </div>
           <div>
-            <FontAwesomeIcon icon="arrow-circle-right" size="sm" className="arrow-icon" />
+            <FontAwesomeIcon icon="compact-disc" size="sm" className="arrow-icon" />
             <p className="artist">Kygo</p>
           </div>
         </CardWrapper>
