@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 
 import styled from "styled-components"
 
+
 const AboutWrapper = styled.div`
   padding-left: 1.0875rem;
   padding-right: 1.0875rem;
