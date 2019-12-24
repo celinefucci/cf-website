@@ -90,20 +90,20 @@ const ContactDetails = styled.div`
         .spotify-icon {
           transition: all 0.2s ease 0s;
         }
-      }
+    }
   
-      .spotify-icon {
-        transition: all 0.2s ease 0s;
-        margin-left: 5px;
-      }
+    .spotify-icon {
+      transition: all 0.2s ease 0s;
+      margin-left: 5px;
+    }
 
-      hr {
-        margin-top: 70px;
-        max-width: 100%;
-        height: 1px;
-        border: 0;
-        background-color: var(--blue-grey-eight);
-      }
+    hr {
+      margin-top: 70px;
+      max-width: 100%;
+      height: 1px;
+      border: 0;
+      background-color: var(--blue-grey-eight);
+    }
 `
 
 const ContactInfo = () => (
