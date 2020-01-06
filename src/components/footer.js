@@ -28,7 +28,7 @@ const FooterText = styled.footer`
 const Footer = () => (
   <FooterWrapper>
     <FooterText>
-      Celine Fucci © 2019 
+      Celine Fucci © 2020 
     </FooterText>
   </FooterWrapper>
 )

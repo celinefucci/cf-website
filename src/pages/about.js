@@ -88,7 +88,7 @@ const AboutPage = () => (
       </AboutText>
     </AboutWrapper>
 
-    <div>
+    <div style={{ maxWidth: `450px` }}>
       <Image />
     </div>
 

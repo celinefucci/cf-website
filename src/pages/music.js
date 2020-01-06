@@ -39,6 +39,8 @@ const FavoriteSongs = styled.ol`
   color: var(--blue-grey-three);
   font-family: var(--secondary-font);
   line-height: 1.8;
+  margin-left: 1.0875rem;
+  margin-right: 1.0875rem;
 
   li a {
     color: var(--blue-grey-three);
@@ -61,7 +63,6 @@ const MusicPage = () => (
     <SEO title="Music" />
     <MusicIntro>listen & share</MusicIntro>
     <MusicSecondary>Click or tap on a card to begin.</MusicSecondary>
-    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:cfooch&size=basic&theme=light&show-count=0" width="200" height="30" scrolling="no" frameborder="0" style={{ border: "none", overflow:"hidden", paddingLeft: "1.0875rem" }} allowtransparency="true"></iframe>
 
       <a href="https://open.spotify.com/playlist/2w2WVSPWNSZfmrPzxR4EK5?si=Lz4PpOc0RQ--bneKSfhA2Q">
         <PlaylistCardOne />
@@ -70,7 +71,7 @@ const MusicPage = () => (
         <PlaylistCardTwo />
       </a>
       <Line />
-      <MusicIntro>December Top 5</MusicIntro>
+      <MusicIntro>january top 5</MusicIntro>
 
       <FavoriteSongs>
         <li><a href="https://open.spotify.com/track/1QireoxwJEQNwVv1eT36mx?si=XHIcQKyHS-OWkZ0fnoWE2A">A Brighter Love - St. Lucia</a></li>

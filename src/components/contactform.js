@@ -69,7 +69,7 @@ const Form = styled.form`
         border-radius: 4px;
         padding: 12px 20px;
         text-decoration: none;
-        margin: 0 2px;
+        margin: 0 0;
         cursor: pointer;
         transition: all 0.2s ease 0s;
         font-weight: bold;
