@@ -72,6 +72,10 @@ const AboutText = styled.p`
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 15px;
+
+  strong {
+    color: var(--purple-six);
+  }
 `
 
 
@@ -82,14 +86,15 @@ const AboutPage = () => (
       <h1>thanks for stopping by!</h1>
       <AboutHeading>Keepin' It Brief</AboutHeading>
       <AboutText>
-        My name is Celine. I'm a UI Designer living in Westchester, New York.
-        I'm a simple person who is passionate about designing clean
-        interfaces, fluid animations, and practical user experiences.
+        My name is Celine. I'm a <strong>UI Designer</strong> living in Westchester, New York.
+        I'm super passionate about <strong>design</strong>. I love <strong>creating clean interfaces</strong> and 
+        <strong> experimenting with fluid animations</strong>. I'm inspired by thoughtful products 
+        with a practical <strong>UX</strong> approach.
       </AboutText>
     </AboutWrapper>
 
     <div style={{ maxWidth: `450px` }}>
-      <Image />
+      <Image filename="about3.JPG" alt="Profile Picture" />
     </div>
 
     <AboutWrapper>
