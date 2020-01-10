@@ -87,9 +87,9 @@ const AboutPage = () => (
       <AboutHeading>Keepin' It Brief</AboutHeading>
       <AboutText>
         My name is Celine. I'm a <strong>UI Designer</strong> living in Westchester, New York.
-        I'm super passionate about <strong>design</strong>. I love <strong>creating clean interfaces</strong> and 
-        <strong> experimenting with fluid animations</strong>. I'm inspired by thoughtful products 
-        with a practical <strong>UX</strong> approach.
+        I'm super passionate about <strong>design</strong>. I love creating <strong>clean interfaces</strong> and 
+        experimenting with <strong>fluid animations</strong>. I'm inspired by thoughtful products 
+        that have a practical <strong>UX</strong> approach.
       </AboutText>
     </AboutWrapper>
 
@@ -104,7 +104,7 @@ const AboutPage = () => (
         Here's a little more info about me. 
       </AboutText>
       <AboutText>
-        I really love design. Besides school projects, my first experience working in design
+        Besides school projects, my first experience working in design
         was during my summer internship at MetLife in 2017. As a front-end developer
         on a four-person team, I was responsible for modernizing an outdated insurance application.
       </AboutText>

@@ -82,17 +82,6 @@ button:hover {
   margin-top: 1px;
 }
 
-.bm-button {
-    color: var(--light-blue-five);
-    border: 1px solid var(--light-blue-five);
-}
-
-.bm-button:hover {
-    color: var(--light-blue-ten);
-    background-color: var(--light-blue-five);
-    
-}
-
 hr {
     margin-top: 70px;
     max-width: 100%;
@@ -102,7 +91,7 @@ hr {
 }
 
 div {
-    //margin: 0 auto;
+    margin: 0 auto;
     //background-color: red;
    // background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
 }
@@ -115,11 +104,11 @@ const WorkPage = () => (
         <WorkWrapper>
             <h1>projects</h1>
             <h2>Know Your Rights</h2>
-            <h3>Mobile app</h3>
+            <h3>Mobile app | UI Design</h3>
 
-            <div style={{ maxWidth: `100%` }}>
+            <div style={{ maxWidth: `90%` }}>
                 <Link to="/kyr/">
-                    <Image filename="kyr.png" alt="Mobile App Intro Screen" />
+                    <Image filename="kyr2.png" alt="Mobile App Intro Screen" />
                 </Link>
             </div>
        
@@ -138,16 +127,16 @@ const WorkPage = () => (
 
         <WorkWrapper>
             <h2>Banner Mobile</h2>
-            <h3>Mobile app</h3>
+            <h3>Mobile app | UI Design, Database Implementation</h3>
 
             <div style={{ maxWidth: `100%` }}>
                 <Link to="/bm/">
-                    <Image filename="bm.png" alt="Mobile App Intro Screen" />
+                    <Image filename="bm2.png" alt="Mobile App Intro Screen" />
                 </Link>
             </div>
        
             <Link to="/bm/">
-                <button className="project-button bm-button">
+                <button className="project-button">
                     Go To Project
                     <FontAwesomeIcon
                     icon="long-arrow-alt-right"
