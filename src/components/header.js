@@ -6,7 +6,7 @@ import React from "react"
 import styled from "styled-components"
 import "../styles/palette.scss"
 
-import resume from "../images/CelineFucci_Resume2019.pdf"
+import resume from "../images/CelineFucci_Resume2020.pdf"
 
 
 const HeaderWrapper = styled.div`

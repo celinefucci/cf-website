@@ -129,9 +129,9 @@ const WorkPage = () => (
             <h2>Banner Mobile</h2>
             <h3>Mobile app | UI Design, Database Implementation</h3>
 
-            <div style={{ maxWidth: `100%` }}>
+            <div style={{ maxWidth: `50%` }}>
                 <Link to="/bm/">
-                    <Image filename="bm2.png" alt="Mobile App Intro Screen" />
+                    <Image filename="bm3.png" alt="Mobile App Intro Screen" />
                 </Link>
             </div>
        

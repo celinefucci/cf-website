@@ -86,7 +86,7 @@ const AboutPage = () => (
       <h1>thanks for stopping by!</h1>
       <AboutHeading>Keepin' It Brief</AboutHeading>
       <AboutText>
-        My name is Celine. I'm a <strong>UI Designer</strong> living in Westchester, New York.
+        My name is Celine. I'm a <strong>UI Designer</strong> living in New York.
         I'm super passionate about <strong>design</strong>. I love creating <strong>clean interfaces</strong> and 
         experimenting with <strong>fluid animations</strong>. I'm inspired by thoughtful products 
         that have a practical <strong>UX</strong> approach.
