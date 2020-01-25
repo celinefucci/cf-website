@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import check from "../images/check-circle-1.svg"
+import check from "../images/check-circle-2.svg"
 
 
 const KYRWrapper = styled.div`
@@ -54,7 +54,7 @@ const KYRWrapper = styled.div`
     font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
   .caption-two {
@@ -81,17 +81,19 @@ ol {
     width: 1em;
     margin-left: -1em;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .project-steps {
     counter-increment: li;
 }
 
-
 .check-bullet {
     padding-right: 8px;
     padding-top: 8px;
     margin-left: -17px;
+    position: relative;
+    top: 2px;
 }
 
   li {
@@ -121,7 +123,10 @@ const KYR = () => (
             </p>
 
             <div style={{ maxWidth: `450px` }}>
-                <Image filename="bmsketches.png" alt="Profile Picture" />
+                <Image filename="kyrsketch1.jpg" alt="Mobile App Sketches" />
+            </div>
+            <div style={{ maxWidth: `450px` }}>
+                <Image filename="kyrsketch2.jpg" alt="Mobile App Sketches" />
             </div>
             <h4>First Sketches of the Know Your Rights App</h4>
 
@@ -139,6 +144,10 @@ const KYR = () => (
             <p>
                 I did have a certain idea or expectation for the project when it began. I knew right away that I wanted to build a mobile app because I recognized that students are always on their phones. Building an app would be the most accessible and fastest way for students to view information privately.
             </p>
+            <div style={{ maxWidth: `450px` }}>
+                <Image filename="kyr2.png" alt="Mobile App UI Mockups" />
+            </div>
+            <h4 className="caption-two">UI Mockups Built With Sketch</h4>
             <hr />
 
             <h2>Process & Experience</h2>
@@ -150,13 +159,6 @@ const KYR = () => (
                 <li className="project-steps">Designing Mockups/Prototypes</li>
                 <li className="project-steps">Building the Final Application</li>
             </ol>
-            <div style={{ maxWidth: `450px` }}>
-                <Image filename="kyrSol2.png" alt="Profile Picture" />
-            </div>
-            <div style={{ maxWidth: `450px` }}>
-                <Image filename="kyrSol3.png" alt="Profile Picture" />
-            </div>
-            <h4 className="caption-two">Final UI Showcasing The Most Important Features</h4>
 
             <p>
                 The reason I chose this approach was because through my research, I recognized that it was a popular approach. I needed to draw out sketches to get a sense of the product and building mockups was necessary to arrange the design of the mobile app.
@@ -167,6 +169,13 @@ const KYR = () => (
             <p>
                 The final product was well received and I was very proud. By taking on this project, I did have knowledge of the technologies I needed to use to build the mobile app but at the same time, I was jumping into foreign territory as it was my first time building an app. The next steps included officially releasing the app on campus. Although this didn't happen due to time constraints and graduation, the overall project outcome was successful. Know Your Rights shed a positive light on the Title IX laws on my college campus. It was an effective resource in determining the rights each student had on campus and who they could contact in case of an emergency. Furthermore, it showcased warning signs students should be aware of in sexual assault situations. This project will always be meaningful to me because of the impact it strived to make in the community.
             </p>
+            <div style={{ maxWidth: `450px` }}>
+                <Image filename="kyrSol1.png" alt="Mobile App Presentation Slides" />
+            </div>
+            <div style={{ maxWidth: `450px` }}>
+                <Image filename="kyrSol2.png" alt="Mobile App Presentation Slides" />
+            </div>
+            <h4 className="caption-two">Final Presentation Slides</h4>
             <hr />
             
             <h2>Credits & My Role</h2>

@@ -108,13 +108,13 @@ const WorkPage = () => (
 
             <div style={{ maxWidth: `90%` }}>
                 <Link to="/kyr/">
-                    <Image filename="kyr2.png" alt="Mobile App Intro Screen" />
+                    <Image filename="kyr1.png" alt="Mobile App Intro Screens" />
                 </Link>
             </div>
        
             <Link to="/kyr/">
                 <button className="project-button">
-                    Go To Project
+                    Read Case Study
                     <FontAwesomeIcon
                     icon="long-arrow-alt-right"
                     size="lg"
@@ -137,7 +137,7 @@ const WorkPage = () => (
        
             <Link to="/bm/">
                 <button className="project-button">
-                    Go To Project
+                    Read Case Study
                     <FontAwesomeIcon
                     icon="long-arrow-alt-right"
                     size="lg"
