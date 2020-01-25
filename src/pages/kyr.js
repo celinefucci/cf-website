@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import check from "../images/check-circle-1.svg"
+
 
 const KYRWrapper = styled.div`
     padding-left: 1.0875rem;
@@ -53,12 +55,10 @@ const KYRWrapper = styled.div`
     font-size: 10px;
     color: var(--blue-grey-three);
     margin-top: 12px;
-    padding-left: 1px;
   }
 
   .caption-two {
       padding-bottom: 20px;
-      padding-left: 1px;
   }
 
   hr {
@@ -74,33 +74,32 @@ ol {
     counter-reset: li;
 }
 
-li::before {
+.project-steps::before {
     content: counter(li);
     color: var(--purple-six);
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
+    font-weight: bold;
 }
 
-li {
+.project-steps {
     counter-increment: li;
 }
 
 
+.check-bullet {
+    padding-right: 8px;
+    padding-top: 8px;
+    margin-left: -17px;
+}
 
-  ol, li {
+  li {
     font-size: 14px;
     color: var(--blue-grey-five);
     line-height: 1.8;
   }
 
-  ul li::before {
-      content: "▪";
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-      color: var(--purple-six);
-  }
 
   ul {
       list-style: none;
@@ -147,9 +146,9 @@ const KYR = () => (
                 The first stage in the project was writing a Request for Proposal (RFP) containing information about Title IX and a detailed plan regarding my solution. When the actual project work began, there were three key stages I worked through: 
             </p>
             <ol>
-                <li>Creating Sketches</li>
-                <li>Designing Mockups/Prototypes</li>
-                <li>Building the Final Application</li>
+                <li className="project-steps">Creating Sketches</li>
+                <li className="project-steps">Designing Mockups/Prototypes</li>
+                <li className="project-steps">Building the Final Application</li>
             </ol>
             <div style={{ maxWidth: `450px` }}>
                 <Image filename="kyrSol2.png" alt="Profile Picture" />
@@ -173,11 +172,11 @@ const KYR = () => (
             <h2>Credits & My Role</h2>
             <p>This was a solo project. Here are some of my learnings:</p>
             <ul>
-                <li>Building a mobile app</li>
-                <li>Prioritizing small steps</li>
-                <li>Working with clients in stages</li>
-                <li>Being an effective public speaker</li>
-                <li>Taking constructive feedback positively</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>Building a mobile app</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>Prioritizing small steps</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>Working with clients in stages</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>Being an effective public speaker</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>Taking constructive feedback</li>
             </ul>
           </KYRWrapper>
     </Layout> 
