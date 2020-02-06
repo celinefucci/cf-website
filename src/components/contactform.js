@@ -102,6 +102,62 @@ const Form = styled.form`
       transition: all 0.2s ease 0s;
       margin-top: 1px;
     }
+
+
+
+
+    // Media Queries
+    @media all and (min-width: 1000px) {
+      .b {
+        max-width: 50%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+
+      .send-button {
+        //display: inline-block;
+        max-width: 40%;
+      }
+
+      button[type=submit] {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .send-icon {
+        margin-left: 5px;
+      }
+
+    }
+
+    @media all and (min-width: 650px) and (max-width: 1000px) {
+      .b {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+
+      .send-button {
+        //display: inline-block;
+        max-width: 40%;
+      }
+
+      button[type=submit] {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .send-icon {
+        margin-left: 5px;
+      }
+    }
+
+    @media all and (min-width: 450px) and (max-width: 650px) {
+      .send-button {
+        //display: inline-block;
+        max-width: 45%;
+      }
+    }
 `
 
 const ContactForm = () => (
@@ -118,21 +174,21 @@ const ContactForm = () => (
             Don’t fill this out: <input name="bot-field" />
           </label>
         </p>
-        <p>
+        <p className="b">
           <label>
             Your Name
             <br />
             <input type="text" name="name" />
           </label>
         </p>
-        <p>
+        <p className="b">
           <label>
             Your Email
             <br />
             <input type="email" name="email" />
           </label>
         </p>
-        <p>
+        <p className="b">
           <label>
             Message
             <br />
@@ -141,7 +197,7 @@ const ContactForm = () => (
         </p>
         {/* TODO - RECAPTCHA */}
         {/* <div data-netlify-recaptcha="true"></div> */}
-        <p>
+        <p className="b c">
           <button type="submit" className="send-button">Send Message<FontAwesomeIcon icon={['far', 'paper-plane']} size="lg" className="fa-fw send-icon" /></button>
         </p>
       </Form>

@@ -32,11 +32,13 @@ const ContactDetails = styled.div`
         //background-color: var(--purple-seven);
         color: var(--purple-six);
         font-size: 40px;
+        font-family: var(--primary-font);
         //padding: 8px 8px;
      }
 
      a, span {
         color: var(--blue-grey-three);
+        font-family: var(--primary-font);
         transition: all 0.2s ease 0s;
      }
 
@@ -104,43 +106,153 @@ const ContactDetails = styled.div`
       border: 0;
       background-color: var(--blue-grey-eight);
     }
+
+
+    // Media Queries - Large
+  @media all and (min-width: 1000px) {
+    .flex-container {
+      display: flex;
+
+      .heading-one {
+        max-width: 100%;
+      }
+
+      hr {
+        display: none;
+      }
+
+      .heading-two {
+        max-width: 100%;
+        margin-top: 0;
+        padding-top: 46.5px;
+      }
+
+      .column-1 {
+        width: 50%;
+        margin-left: 130px;
+      }
+  
+      .column-2 {
+        width: 50%;
+        //margin-left: 50px;
+        margin-top: 0;
+      }
+  
+      button {
+        display: block;
+        max-width: 70%;
+      }
+
+    }
+
+    
+    .heading-three {
+      max-width: 100%;
+      text-align: center;
+    }
+
+
+  }
+
+  // Not smaller than 750
+  @media all and (min-width: 650px) and (max-width: 1000px) {
+    .flex-container {
+      display: flex;
+
+      .heading-one {
+        max-width: 100%;
+      }
+
+      hr {
+        display: none;
+      }
+
+      .heading-two {
+        max-width: 100%;
+        margin-top: 0;
+        padding-top: 46.5px;
+      }
+
+      .column-1 {
+        width: 50%;
+        //margin-left: 30px;
+      }
+  
+      .column-2 {
+        width: 50%;
+        margin-right: 0px;
+        margin-top: 0;
+        padding-left: 50px;
+      }
+  
+      button {
+        display: block;
+        max-width: 75%;
+      }
+
+    }
+
+    .heading-three {
+      max-width: 100%;
+      text-align: center;
+    }
+
+  }
+
+  @media all and (min-width: 450px) and (max-width: 650px) {
+    button {
+      max-width: 45%;
+    }
+  }
+
 `
 
 const ContactInfo = () => (
   // Make the a href a button tag?
   <ContactDetails>
-    <h3 class="heading-one">get in touch</h3>
-    <a href="https://www.linkedin.com/in/celinefucci/">LinkedIn</a>
-    <span> | </span>
-    <a href="https://github.com/celinefucci">GitHub</a>
-    <span> | </span>
-    <span>
-      <a href="https://twitter.com/cfooch96">Twitter</a>
-    </span>
-    <div>
-      or email me at {" "}
+
+  <div className="flex-container">
+
+    {/* Column 1 */}
+    <div className="column-1">
+      <h3 class="heading-one">get in touch</h3>
+      <a href="https://www.linkedin.com/in/celinefucci/">LinkedIn</a>
+      <span> | </span>
+      <a href="https://github.com/celinefucci">GitHub</a>
+      <span> | </span>
       <span>
-        <a href="mailto:celinefucci@gmail.com" className="email">
-          celinefucci@gmail.com
-        </a>
+        <a href="https://twitter.com/cfooch96">Twitter</a>
       </span>
+      <div>
+        or email me at {" "}
+        <span>
+          <a href="mailto:celinefucci@gmail.com" className="email">
+            celinefucci@gmail.com
+          </a>
+        </span>
+      </div>
+      <hr />
     </div>
-    <hr />
 
-    <h3 class="heading-two">need some tunes?</h3>
-    <span>Music for designing, writing, coding, and gym time.</span>
+    {/* Column 2 */}
+      <div className="column-2">
+        <h3 class="heading-two">need some tunes?</h3>
+        <span>Music for designing, writing, coding, and gym time.</span>
 
-    <Link to="/music/">
-        <button className="spotify-button">
-            View Playlists
-            <FontAwesomeIcon
-            icon={["fab", "spotify"]}
-            size="lg"
-            className="fa-fw spotify-icon"
-            />
-        </button>
-    </Link>
-    <hr />
+        <Link to="/music/">
+            <button className="spotify-button">
+                View Playlists
+                <FontAwesomeIcon
+                icon={["fab", "spotify"]}
+                size="lg"
+                className="fa-fw spotify-icon"
+                />
+            </button>
+        </Link>
+        <hr />
+      </div>
+
+  </div>
 
     <h3 class="heading-three">ask me a question</h3>
   </ContactDetails>

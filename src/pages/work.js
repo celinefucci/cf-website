@@ -36,7 +36,7 @@ const WorkWrapper = styled.div`
     font-size: 14px;
     font-weight: normal;
     color: var(--blue-grey-five);
-    margin-top: -8px;
+    margin-top: -10px;
     margin-bottom: 18px;
   }
 
@@ -104,7 +104,7 @@ const WorkPage = () => (
         <WorkWrapper>
             <h1>projects</h1>
             <h2>Know Your Rights</h2>
-            <h3>Mobile app | UI Design</h3>
+            <h3>Mobile App, UI Design</h3>
 
             <div style={{ maxWidth: `90%` }}>
                 <Link to="/kyr/">
@@ -127,7 +127,7 @@ const WorkPage = () => (
 
         <WorkWrapper>
             <h2>Banner Mobile</h2>
-            <h3>Mobile app | UI Design, Database Implementation</h3>
+            <h3>Mobile App, UI Design + Database</h3>
 
             <div style={{ maxWidth: `50%` }}>
                 <Link to="/bm/">

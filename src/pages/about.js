@@ -53,6 +53,32 @@ const AboutWrapper = styled.div`
   .about-email {
     display: inline;
   }
+
+  .about-picture {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+
+  // // Media Queries
+  // @media all and (min-width: 50em) {
+  //   h1 {
+  //     max-width: 100%;
+  //   }
+  //   .intro-header {
+  //     float: right;
+  //     order: 1;
+  //   }
+  //   .intro-text {
+  //     float: right;
+  //     width: 50%;
+  //     order: 2;
+  //   } 
+  //   .about-picture {
+  //     float: left;
+  //     //max-width: 450px;
+  //   }
+  // }
 `
 
 const AboutHeading = styled.h2`
@@ -84,16 +110,16 @@ const AboutPage = () => (
     <SEO title="About" />
     <AboutWrapper>
       <h1>thanks for stopping by!</h1>
-      <AboutHeading>Keepin' It Brief</AboutHeading>
-      <AboutText>
-        My name is Celine. I'm a <strong>UI Designer</strong> living in New York.
-        I'm super passionate about <strong>design</strong>. I love creating <strong>clean interfaces</strong> and 
+      <AboutHeading className="intro-header">Keepin' It Brief</AboutHeading>
+      <AboutText className="intro-text">
+        My name is Celine. I'm a <strong>UI Designer</strong> living in New York
+        and I'm super passionate about <strong>design</strong>. I love creating <strong>clean interfaces</strong> and 
         experimenting with <strong>fluid animations</strong>. I'm inspired by thoughtful products 
         that have a practical <strong>UX</strong> approach.
       </AboutText>
     </AboutWrapper>
 
-    <div style={{ maxWidth: `450px` }}>
+    <div className="about-picture">
       <Image filename="about3.JPG" alt="Profile Picture" />
     </div>
 

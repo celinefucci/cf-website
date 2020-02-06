@@ -15,21 +15,54 @@ const KYRWrapper = styled.div`
     padding-right: 1.0875rem;
 
   h1 {
-    max-width: 250px;
+    max-width: 275px;
     margin-top: 50px;
     color: var(--purple-six);
     font-size: 40px;
+    margin-bottom: 18px;
   }
 
-  .social-icon {
-    display: inline-block;
-    //margin-bottom: 20px;
+  .social-text {
+    font-size: 14px;
+    font-weight: bold;
     color: var(--purple-six);
     background-color: var(--purple-nine);
-    border-radius: 50%;
-    padding: 8px;
-    //font-size: 16px;
+    border-radius: 50px;
+    //padding: 8px;
+    display: inline-block;
+    padding-left: 22px;
+    margin-top: 30px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+  .social-icon {
+    font-size: 18px;
+    margin-right: 22px;
+    padding-left: 5px;
+    position: relative;
+    top: 1px;
+    left: 1px;
 }   
+
+.tools {
+    margin-top: 25px;
+}
+
+span {
+  border-radius: 50px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  background-color: var(--blue-grey-two);
+  color: var(--blue-grey-ten);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: .13em;
+  margin-right: 10px;
+}
 
   h2 {
     font-weight: normal;
@@ -39,7 +72,9 @@ const KYRWrapper = styled.div`
     //border-bottom: 2px solid var(--purple-six);
     //padding-bottom: 5px;
     margin-top: 50px;
+    margin-bottom: -5px;
   }
+
 
   p {
     font-size: 14px;
@@ -113,10 +148,15 @@ const KYR = () => (
     <Layout>
           <SEO title="Know Your Rights" />
           <KYRWrapper>
-            <h1>Know Your Rights iOS App</h1>
-            <a href="https://github.com/celinefucci/know-your-rights" className="social-icon"><FontAwesomeIcon icon={['fab', 'github']} size="md" className="fa-fw" /></a>
-
-
+            <h1>Know Your Rights Mobile App</h1>
+            
+            <div className="tools">
+                <a href="https://ionicframework.com/"><span>Ionic</span></a>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+            </div>
+            <a href="https://github.com/celinefucci/know-your-rights" className="social-text">View Code<FontAwesomeIcon icon={['fab', 'github']} size="md" className="fa-fw social-icon" /></a>
             <h2>A Mobile App for Students</h2>
             <p>
                 Know Your Rights is a convenient mobile application specifically tailored for college students attending the State University of New York Polytechnic Institute to view policies, procedures, and other information surrounding the Title IX federal civil rights law. Students can use the app at any time, as long as they are in possession of their mobile device.
