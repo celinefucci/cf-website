@@ -9,6 +9,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import check from "../images/check-circle-2.svg"
 
+import kyrProposal from "../images/kyrProposal.pdf"
+
 
 const KYRWrapper = styled.div`
     padding-left: 1.0875rem;
@@ -20,6 +22,15 @@ const KYRWrapper = styled.div`
     color: var(--purple-six);
     font-size: 40px;
     margin-bottom: 18px;
+  }
+
+  .doc-icon {
+    font-size: 18px;
+    margin-right: 15px;
+    padding-left: 5px;
+    position: relative;
+    top: 0px;
+    left: 1px;
   }
 
   .social-text {
@@ -34,11 +45,13 @@ const KYRWrapper = styled.div`
     margin-top: 30px;
     padding-top: 9px;
     padding-bottom: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid var(--purple-six);
 }
 
   .social-icon {
     font-size: 18px;
-    margin-right: 22px;
+    margin-right: 15px;
     padding-left: 5px;
     position: relative;
     top: 1px;
@@ -86,7 +99,7 @@ span {
   }
 
   h4 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 10px;
     color: var(--blue-grey-three);
     margin-top: 8px;
@@ -128,7 +141,7 @@ ol {
     padding-top: 8px;
     margin-left: -17px;
     position: relative;
-    top: 2px;
+    top: 3px;
 }
 
   li {
@@ -156,8 +169,15 @@ const KYR = () => (
                 <span>CSS</span>
                 <span>JS</span>
             </div>
+
+
+            <a href={kyrProposal} className="social-text">Project Brief<FontAwesomeIcon icon={['fas', 'file-download']} size="md" className="fa-fw doc-icon" /></a>
+
             <a href="https://github.com/celinefucci/know-your-rights" className="social-text">View Code<FontAwesomeIcon icon={['fab', 'github']} size="md" className="fa-fw social-icon" /></a>
-            <h2>A Mobile App for Students</h2>
+
+
+
+            <h2>Overview</h2>
             <p>
                 Know Your Rights is a convenient mobile application specifically tailored for college students attending the State University of New York Polytechnic Institute to view policies, procedures, and other information surrounding the Title IX federal civil rights law. Students can use the app at any time, as long as they are in possession of their mobile device.
             </p>
@@ -170,14 +190,14 @@ const KYR = () => (
             </div>
             <h4>First Sketches of the Know Your Rights App</h4>
 
-            <h2>A Positive Title IX Campaign</h2>
+            <h2>Challenge</h2>
             <p>
-                The clients for this project, the Title IX Department at the school, were requesting a solution be built to draw more attention to the law. The solution had to be an effective campaign, one which eliminated the use of intimidating statistics and discouraging imagery regarding Title IX, which previous campaigns used.
+                The challenge I set out to solve was to build an effective product that not only brought attention to the importance of Title IX but gave students an easy-to-access personal resource for viewing their rights if they were to encounter or be a victim of a sexual assault.
             </p>
 
-            <h2>A Personal Resource</h2>
+            <h2>A Positive Campaign</h2>
             <p>
-                The challenge I set out to solve was to build an effective product that not only brought attention to the importance of Title IX but gave students a personal resource for accessing their rights if they were to encounter or be a victim of a sexual assault.
+                The clients for this project, the Title IX Department at the school, were requesting a solution be built to draw more attention to the law. The solution had to be an effective campaign, one which eliminated the use of intimidating statistics and discouraging imagery regarding Title IX, which previous campaigns used.
             </p>
 
             <h2>Convenient, Accessible, Private</h2>
@@ -218,8 +238,8 @@ const KYR = () => (
             <h4 className="caption-two">Final Presentation Slides</h4>
             <hr />
             
-            <h2>Credits & My Role</h2>
-            <p>This was a solo project. Here are some of my learnings:</p>
+            <h2>My Role</h2>
+            <p>This was a solo endeavor. I was responsible for the project proposal, sketches, prototypes, UI design, coding, and presentation decks. Here are some of my learnings:</p>
             <ul>
                 <li><img src={check} alt="bullet" className="check-bullet"></img>Building a mobile app</li>
                 <li><img src={check} alt="bullet" className="check-bullet"></img>Prioritizing small steps</li>
