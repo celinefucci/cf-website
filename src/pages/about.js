@@ -4,6 +4,8 @@ import Image from "../components/image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BackButton from "../components/back"
+import TopButton from "../components/top"
 
 import styled from "styled-components"
 
@@ -14,7 +16,7 @@ const AboutWrapper = styled.div`
 
   h1 {
     max-width: 250px;
-    margin-top: 50px;
+    margin-top: 40px;
     color: var(--purple-six);
     font-size: 40px;
   }
@@ -35,7 +37,7 @@ const AboutWrapper = styled.div`
     padding-bottom: 30px;
   }
 
-  a, span {
+  .email {
     color: var(--blue-grey-three);
     transition: all 0.2s ease 0s;
     font-size: 14px;
@@ -45,7 +47,7 @@ const AboutWrapper = styled.div`
     padding-bottom: 5px;
   }
 
-  a:hover {
+  .email:hover {
     color: var(--purple-six);
     transition: all 0.2s ease 0s;
   } 
@@ -90,14 +92,14 @@ const AboutHeading = styled.h2`
   padding-bottom: 5px;
   max-width: 130px;
   font-family: var(--secondary-font);
-  margin-top: 60px;
+  margin-top: 50px;
 `
 
 const AboutText = styled.p`
   color: var(--blue-grey-three);
   font-size: 14px;
   line-height: 1.8;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   strong {
     color: var(--purple-six);
@@ -109,6 +111,9 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <AboutWrapper>
+      <Link to="/">
+        <BackButton />
+      </Link>
       <h1>thanks for stopping by!</h1>
       <AboutHeading className="intro-header">Keepin' It Brief</AboutHeading>
       <AboutText className="intro-text">
@@ -120,7 +125,7 @@ const AboutPage = () => (
     </AboutWrapper>
 
     <div className="about-picture">
-      <Image filename="about3.JPG" alt="Profile Picture" />
+      <Image filename="about4.JPG" alt="Profile Picture" />
     </div>
 
     <AboutWrapper>
@@ -158,8 +163,10 @@ const AboutPage = () => (
           </a>
         </span>
       </div>
-
     </AboutWrapper>
+    <div style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem`, paddingTop: `1.0875rem` }}>
+      <TopButton />
+    </div>
   </Layout>
 )
 

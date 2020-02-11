@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BackButton from "../components/back"
+import TopButton from "../components/top"
 
 // Use buttons/tags for tools used in project. Ex: HTML, CSS
 
@@ -16,7 +18,7 @@ const WorkWrapper = styled.div`
 
   h1 {
     max-width: 250px;
-    margin-top: 50px;
+    margin-top: 40px;
     color: var(--purple-six);
     font-size: 40px;
   }
@@ -40,7 +42,7 @@ const WorkWrapper = styled.div`
     margin-bottom: 18px;
   }
 
-  button {
+  .project-button {
     color: var(--purple-six);
     background-color: transparent;
     border: 1px solid var(--purple-six);
@@ -53,29 +55,26 @@ const WorkWrapper = styled.div`
     transition: all 0.2s ease 0s;
     font-weight: bold;
     width: 100%;
-}
 
-button:hover {
-    color: var(--purple-ten);
-    background-color: var(--purple-six);
-} 
-
-.project-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  line-height: 1;
-  align-items: center;
-  transition: all 0.2s ease 0s;
-  margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1;
+    align-items: center;
+    transition: all 0.2s ease 0s;
+    margin-top: 18px;
 }
 
 .project-button:hover {
-  .project-icon {
-    transform: rotate(-35deg);
-    transition: all 0.2s ease 0s;
-  }
-}
+    color: var(--purple-ten);
+    background-color: var(--purple-six);
+
+    .project-icon {
+      transform: rotate(-35deg);
+      transition: all 0.2s ease 0s;
+    }
+
+} 
 
 .project-icon {
   transition: all 0.2s ease 0s;
@@ -101,6 +100,9 @@ div {
 const WorkPage = () => (
     <Layout>
         <SEO title="Projects" />
+        <Link to="/" style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem` }}>
+          <BackButton />
+        </Link>
         <WorkWrapper>
             <h1>projects</h1>
             <h2>Know Your Rights</h2>
@@ -145,8 +147,11 @@ const WorkPage = () => (
                     />
                 </button>
             </Link>
+            <div style={{ paddingTop: `1.0875rem` }}>
+              <TopButton />
+            </div>
         </WorkWrapper>
-
+        
     </Layout>      
 )
 

@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import check from "../images/check-circle-2.svg"
+import BackButton from "../components/back"
+import TopButton from "../components/top"
 
 import bannerProposal from "../images/bannerProposal.pdf"
 
@@ -18,7 +20,7 @@ const BannerWrapper = styled.div`
 
   h1 {
     max-width: 275px;
-    margin-top: 50px;
+    margin-top: 40px;
     color: var(--purple-six);
     font-size: 40px;
     margin-bottom: 18px;
@@ -78,7 +80,7 @@ span {
 }
 
   h2 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     color: var(--blue-grey-three);
     text-decoration: none;
@@ -86,6 +88,8 @@ span {
     //padding-bottom: 5px;
     margin-top: 50px;
     margin-bottom: -5px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
   }
 
 
@@ -98,8 +102,12 @@ span {
     line-height: 1.8;
   }
 
+  .bm-sketch-1 {
+    text-align: center;
+  }
+
   h4 {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
     margin-top: 8px;
@@ -174,16 +182,20 @@ ol {
 `
 
 const Banner = () => (
-    <Layout>
+    <Layout id="top">
           <SEO title="Banner Mobile" />
           <BannerWrapper>
+              <Link to="/work/">
+                <BackButton />
+              </Link>
+            
             <h1>Banner Mobile App</h1>
             
             <div className="tools">
                 <a href="https://ionicframework.com/"><span>Ionic</span></a>
                 <a href="https://firebase.google.com/"><span>Firebase</span></a>
+                <span>Angular</span>
                 <span>HTML</span>
-                <span>JS</span>
             </div>
 
 
@@ -195,36 +207,40 @@ const Banner = () => (
 
             <h2>Overview</h2>
             <p>
-                Banner Mobile is an application that allows users to easily view information for a subset of classes at the State University of New York (SUNY) Polytechnic Institute in the Communication and Humanities Department for the upcoming Fall 2018 semester. One of its main goals is to simplify the information found in the current Banner Web system.
+                Banner Mobile is an application that allows users to easily view registration information for a subset of classes at the State University of New York (SUNY) Polytechnic Institute. One of its main goals is to simplify the information found in the current Banner Web system.
             </p>
 
-            <div style={{ maxWidth: `450px` }}>
-                <Image filename="kyrsketch1.jpg" alt="Mobile App Sketches" />
+            <div style={{ maxWidth: `200px`, margin: `0 auto` }}>
+                <Image filename="bmsketch1.jpg" alt="Mobile App Sketches" />
             </div>
-            <div style={{ maxWidth: `450px` }}>
-                <Image filename="kyrsketch2.jpg" alt="Mobile App Sketches" />
-            </div>
-            <h4>First Sketches of the Know Your Rights App</h4>
+            <h4 className="bm-sketch-1">First Sketches of the Banner Mobile App</h4>
 
             <h2>Challenge</h2>
             <p>
-                The current Banner Web System is outdated and cluttered. The system is difficult for students to 
-                view the classes they need to take each semester. Furthermore, searching for classes is time 
-                consuming and forces students to navigate through a series of screens.
-            </p>
-
-            <h2>Goals & Expectations</h2>
-            <p>
-                At the start of this project, I didn't know how it would go. I knew my main challenge would be to extract data from a database and I wasn't all too familiar with database development. During my research, I aimed to find the easiest tool to use and learn within a few weeks. I knew right away that I wanted to build a mobile app with Ionic because I had previous experience with it from a prior project. Additionally, since the Banner System already existed on the Web, I knew building a mobile app would be an effective next step because college students are always on their mobile phones and they're the preferred method of communication.
+                The current Banner Web System is outdated and cluttered. The system is difficult to navigate and inefficient, causing frustration for students who want to quickly view the classes they need to take each semester. Overall, searching for classes is time consuming and forces students to navigate through a series of screens. The challenge I set out to solve was to not only make a mobile version of this system, but to simplify the experience for students.
             </p>
             <div style={{ maxWidth: `450px` }}>
-                <Image filename="kyr2.png" alt="Mobile App UI Mockups" />
+                <Image filename="bmsketch2.jpg" alt="Mobile App Sketches" />
             </div>
-            <h4 className="caption-two">UI Mockups Built With Sketch</h4>
+            <h4>More Sketches Regarding My Plan for the UI</h4>
+
+            <h2>Expectations</h2>
+            <p>
+                At the beginning of this project, my first expectation was clear - to build a mobile app with Ionic because I had previous experience with it from a prior project. Plus, I knew that building a mobile app would be effective because college students are always on their mobile phones and they are the preferred method of communication.
+            </p>
+            <p>
+                My second expectation was more challenging because it involved extracting data from a database and I wasn't all too familiar with database development. Therefore, during my research, I aimed to find the easiest tool to use and learn within a few weeks.
+            </p>
+            
+            <div style={{ maxWidth: `450px` }}>
+                <Image filename="firebase.png" alt="Database Image" />
+            </div>
+            <h4 className="caption-two">A Snapshot of Firebase Data</h4>
             <hr />
 
             <h2>Process & Experience</h2>
             <p>
+                The first step in the process was to create an App Design Document/Project Brief. From here, I worked through four project stages:
             </p>
             <ol>
                 <li className="project-steps">Research</li>
@@ -232,31 +248,41 @@ const Banner = () => (
                 <li className="project-steps">Sketches/Mockups/Prototypes</li>
                 <li className="project-steps">Building the Final Application</li>
             </ol>
-
             <p>
+                I chose this approach because I found success with it from other past projects I worked on. Research is an important first step in any project. Creating a state diagram allowed me to determine the behavior of the application and its various states. Moving forward, I took a unique angle when I started to build the final application because I used Firebase, a newer, unfamiliar database tool. I ended up choosing Firebase because of its realtime, offline, and fast connection capabilities. Firebase also had a simple setup. Finding a simple tool was key because I had a limited amount of time to learn and implement it.
             </p>
             <hr />
 
-            <h2>The Outcome</h2>
+            <h2>Outcome</h2>
             <p>
+                Although this project got off to a late start in the semester, I was proud of the end result because I succeeded at extracting data from a database, which was difficult and frustrating at times. This project was meaningful to me because I challenged myself to learn an unfamiliar technology and step out of my comfort zone. Additionally, it was my last project before graduation.
             </p>
-            <div style={{ maxWidth: `450px` }}>
-                <Image filename="kyrSol1.png" alt="Mobile App Presentation Slides" />
-            </div>
-            <div style={{ maxWidth: `450px` }}>
-                <Image filename="kyrSol2.png" alt="Mobile App Presentation Slides" />
-            </div>
-            <h4 className="caption-two">Final Presentation Slides</h4>
+            <p>
+                Effectively, this project was a working prototype that would have had a bright future if I didn't graduate and was able to work on implementing it with school administrators. By the end, I had learned a crucial lesson which posed the question: 
+            </p>
+            <p>
+                <em>"Why overhaul a system that's not broken?"</em>
+            </p>
+            <p> 
+                My answer to that is projects built by students should be deemed important because they are innovative, unique, and have the opportunity to make an impact by improving academic and campus life.  
+            </p>
+            
+            {/* <div style={{ maxWidth: `450px` }}>
+                <Image filename="kyrSol1.png" alt="Database Image" />
+            </div> */}
+            <iframe width="300" height="315" src="https://www.youtube.com/embed/LfKXKluJyIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4 className="caption-two">Final Product Video</h4>
             <hr />
             
             <h2>My Role</h2>
-            <p>This was a solo endeavor. I was responsible for the app design document, sketches, UI design, coding, and presentation decks. Here are some of my learnings:</p>
+            <p>This was a solo endeavor. I was responsible for the app design document, sketches, UI design, coding, and presentation decks. Here are some of my further learnings:</p>
             <ul>
-                <li><img src={check} alt="bullet" className="check-bullet"></img>Extracting data from a database</li>
-                <li><img src={check} alt="bullet" className="check-bullet"></img>How to ask other developers for help</li>
-                <li><img src={check} alt="bullet" className="check-bullet"></img>Create a plan to achieve success</li>
                 <li><img src={check} alt="bullet" className="check-bullet"></img>Research is key</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>Extracting data from a database</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>When to ask other developers for help</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>Creating plans lead to success</li>
             </ul>
+            <TopButton />
           </BannerWrapper>
     </Layout> 
           

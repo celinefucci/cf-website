@@ -12,7 +12,7 @@ const ContactDetails = styled.div`
     padding-right: 1.0875rem;
 
     .heading-one {
-        margin-top: 30px;
+        margin-top: 40px;
         max-width: 135px;
         margin-bottom: 15px;
     }
@@ -254,7 +254,7 @@ const ContactInfo = () => (
 
   </div>
 
-    <h3 class="heading-three">ask me a question</h3>
+  <h3 class="heading-three">ask me a question</h3>
   </ContactDetails>
 )
 

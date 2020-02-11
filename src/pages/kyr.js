@@ -8,6 +8,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import check from "../images/check-circle-2.svg"
+import BackButton from "../components/back"
+import TopButton from "../components/top"
+
+
 
 import kyrProposal from "../images/kyrProposal.pdf"
 
@@ -18,7 +22,7 @@ const KYRWrapper = styled.div`
 
   h1 {
     max-width: 275px;
-    margin-top: 50px;
+    margin-top: 40px;
     color: var(--purple-six);
     font-size: 40px;
     margin-bottom: 18px;
@@ -78,7 +82,7 @@ span {
 }
 
   h2 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     color: var(--blue-grey-three);
     text-decoration: none;
@@ -86,6 +90,8 @@ span {
     //padding-bottom: 5px;
     margin-top: 50px;
     margin-bottom: -5px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
   }
 
 
@@ -99,7 +105,7 @@ span {
   }
 
   h4 {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
     margin-top: 8px;
@@ -107,6 +113,10 @@ span {
 
   .caption-two {
       padding-bottom: 20px;
+  }
+
+  .mockups {
+    text-align: center;
   }
 
   hr {
@@ -158,9 +168,12 @@ ol {
 `
 
 const KYR = () => (
-    <Layout>
+    <Layout id="top">
           <SEO title="Know Your Rights" />
           <KYRWrapper>
+              <Link to="/work/">
+                <BackButton />
+              </Link>
             <h1>Know Your Rights Mobile App</h1>
             
             <div className="tools">
@@ -207,7 +220,7 @@ const KYR = () => (
             <div style={{ maxWidth: `450px` }}>
                 <Image filename="kyr2.png" alt="Mobile App UI Mockups" />
             </div>
-            <h4 className="caption-two">UI Mockups Built With Sketch</h4>
+            <h4 className="caption-two mockups">UI Mockups Built With Sketch</h4>
             <hr />
 
             <h2>Process & Experience</h2>
@@ -225,7 +238,7 @@ const KYR = () => (
             </p>
             <hr />
 
-            <h2>The Outcome</h2>
+            <h2>Outcome</h2>
             <p>
                 The final product was well received and I was very proud. By taking on this project, I did have knowledge of the technologies I needed to use to build the mobile app but at the same time, I was jumping into foreign territory as it was my first time building an app. The next steps included officially releasing the app on campus. Although this didn't happen due to time constraints and graduation, the overall project outcome was successful. Know Your Rights shed a positive light on the Title IX laws on my college campus. It was an effective resource in determining the rights each student had on campus and who they could contact in case of an emergency. Furthermore, it showcased warning signs students should be aware of in sexual assault situations. This project will always be meaningful to me because of the impact it strived to make in the community.
             </p>
@@ -247,6 +260,7 @@ const KYR = () => (
                 <li><img src={check} alt="bullet" className="check-bullet"></img>Being an effective public speaker</li>
                 <li><img src={check} alt="bullet" className="check-bullet"></img>Taking constructive feedback</li>
             </ul>
+            <TopButton />
           </KYRWrapper>
     </Layout> 
           
