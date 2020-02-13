@@ -35,7 +35,7 @@ const MusicPage = () => (
 
     <SEO title="Music" />
 
-    <Link to="/" style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem` }}>
+    <Link to="/contact/" style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem` }}>
       <BackButton />
     </Link>
 

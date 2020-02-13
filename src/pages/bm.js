@@ -270,7 +270,7 @@ const Banner = () => (
             {/* <div style={{ maxWidth: `450px` }}>
                 <Image filename="kyrSol1.png" alt="Database Image" />
             </div> */}
-            <iframe width="300" height="315" src="https://www.youtube.com/embed/LfKXKluJyIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe style={{ margin: `0 auto` }} width="300" height="315" src="https://www.youtube.com/embed/LfKXKluJyIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h4 className="caption-two">Final Product Video</h4>
             <hr />
             

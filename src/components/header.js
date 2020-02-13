@@ -45,6 +45,7 @@ const ResumeButton = styled.button`
     a {
       color: var(--blue-grey-three);
       font-size: 14px;
+      text-transform: uppercase;
     }
     
     transition: all 0.3s ease 0s;
@@ -71,7 +72,7 @@ const Header = ({ siteTitle }) => (
       </h1>
     </Headline>
     <ResumeButton>
-        <a href={resume}>RESUME<FontAwesomeIcon icon="arrow-down" size="md" className="resume-icon" /></a>
+        <a href={resume}>résumé<FontAwesomeIcon icon="arrow-down" size="md" className="resume-icon" /></a>
     </ResumeButton> 
   </HeaderWrapper>
 )
