@@ -26,16 +26,17 @@ const NotFound = styled.div`
     margin-top: 40px;
   }
 
-  .not-found {
+  h3 {
+    color: var(--blue-grey-three);
+    font-size: 24px;
     margin-top: -20px;
     padding-bottom: 25px;
   }
 
-  h3 {
+  h4 {
     color: var(--blue-grey-three);
     font-size: 16px;
     padding-top: 40px;
-    letter-spacing: .02em;
   }
 
   p {
@@ -78,16 +79,16 @@ const NotFoundPage = () => (
         <SEO title="404" />
         <NotFound>
 
-            <h2>Error</h2>
+            <h2>error</h2>
             <h1>404</h1>
             
-            <h2 className="not-found">This page doesn't exist</h2>
+            <h3>This page doesn't exist</h3>
 
             <p>
               Did you mistype the address? If not, the page may have been deleted, moved, or renamed.
             </p>
 
-            <h3>Let's Get You Back On Track:</h3>
+            <h4>Let's Get You Back On Track:</h4>
 
             <ul>
               <li>
