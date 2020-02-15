@@ -4,6 +4,7 @@ import Image from "../components/image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Social from "../components/social"
 import BackButton from "../components/back"
 import TopButton from "../components/top"
 
@@ -110,6 +111,7 @@ const AboutText = styled.p`
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
+    <Social />
     <AboutWrapper>
       <Link to="/">
         <BackButton />

@@ -9,7 +9,7 @@ import "../styles/palette.scss"
 import resume from "../images/CelineFucci_Resume2020.pdf"
 
 
-const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.header`
   margin-bottom: 0.5rem;
   display: flex;    
   flex-direction: row;

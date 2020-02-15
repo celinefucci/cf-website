@@ -30,7 +30,7 @@ const TopButton = styled.button`
 
 const Top = () => (
     <a href="#top">
-        <TopButton>
+        <TopButton className="hi">
             <FontAwesomeIcon icon={['fas', 'arrow-up']} size="md" className="fa-fw" />
         </TopButton>
     </a>

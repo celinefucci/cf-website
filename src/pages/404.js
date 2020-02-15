@@ -12,10 +12,10 @@ const NotFound = styled.div`
 
   h1 {
     max-width: 250px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color: var(--purple-six);
-    font-size: 40px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: var(--purple-eight);
+    font-size: 90px;
   }
 
   h2 {
@@ -23,12 +23,18 @@ const NotFound = styled.div`
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: .05em;
+    margin-top: 40px;
+  }
+
+  .not-found {
+    margin-top: -20px;
+    padding-bottom: 25px;
   }
 
   h3 {
     color: var(--blue-grey-three);
     font-size: 16px;
-    padding-top: 30px;
+    padding-top: 40px;
     letter-spacing: .02em;
   }
 
@@ -71,11 +77,16 @@ const NotFoundPage = () => (
     <Layout>
         <SEO title="404" />
         <NotFound>
+
+            <h2>Error</h2>
+            <h1>404</h1>
             
-            <h1>looks like you're lost</h1>
-            <h2>Error Code 404</h2>
-            
-            <p>This page doesn't exist. Did you mistype the address? If not, the page may have been deleted, moved, or renamed.</p>
+            <h2 className="not-found">This page doesn't exist</h2>
+
+            <p>
+              Did you mistype the address? If not, the page may have been deleted, moved, or renamed.
+            </p>
+
             <h3>Let's Get You Back On Track:</h3>
 
             <ul>
@@ -96,7 +107,7 @@ const NotFoundPage = () => (
 
               <li>
                 <FontAwesomeIcon icon={['fas', 'arrow-right']} size="md" className="fa-fw right-arrow" />
-                <Link to="/music">Jam Out</Link>
+                <Link to="/music">Playlists</Link>
               </li>
 
             </ul>

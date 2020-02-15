@@ -18,6 +18,7 @@ const BackButton = styled.button`
     border: none;
     padding: 10px;
     cursor: pointer;
+    margin-top: 20px;
 
 `
 

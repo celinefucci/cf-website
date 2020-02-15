@@ -11,8 +11,8 @@ const SocialWrapper = styled.div`
     }
 
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    
     
     .social-icon {
         display: inline-block;
@@ -22,6 +22,11 @@ const SocialWrapper = styled.div`
         border-radius: 50%;
         padding: 8px;
         //font-size: 16px;
+    }
+
+    a {
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
 `

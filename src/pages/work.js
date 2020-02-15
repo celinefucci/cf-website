@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Social from "../components/social"
 import BackButton from "../components/back"
 import TopButton from "../components/top"
 
@@ -63,6 +64,7 @@ const WorkWrapper = styled.div`
     align-items: center;
     transition: all 0.2s ease 0s;
     margin-top: 18px;
+    //margin-bottom: 50px;
 }
 
 .project-button:hover {
@@ -100,6 +102,7 @@ div {
 const WorkPage = () => (
     <Layout>
         <SEO title="Projects" />
+        <Social />
         <Link to="/" style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem` }}>
           <BackButton />
         </Link>
