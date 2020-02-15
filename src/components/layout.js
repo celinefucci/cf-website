@@ -23,11 +23,11 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-import { faUser, faFileCode, faPhoneAlt, faArrowDown, faCompactDisc, faLongArrowAltRight, faFileDownload, faArrowLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faFileCode, faPhoneAlt, faArrowDown, faCompactDisc, faLongArrowAltRight, faFileDownload, faArrowLeft, faArrowUp, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faLinkedinIn, faSpotify, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 
-library.add(fas, far, fab, faUser, faFileCode, faPhoneAlt, faArrowDown, faTwitter, faLinkedinIn, faSpotify, faEnvelope, faGithub, faPaperPlane, faCompactDisc, faLongArrowAltRight, faFileDownload, faArrowLeft, faArrowUp)
+library.add(fas, far, fab, faUser, faFileCode, faPhoneAlt, faArrowDown, faTwitter, faLinkedinIn, faSpotify, faEnvelope, faGithub, faPaperPlane, faCompactDisc, faLongArrowAltRight, faFileDownload, faArrowLeft, faArrowUp, faArrowRight)
 
 // Smooth Scroll
 if (typeof window !== "undefined") {
