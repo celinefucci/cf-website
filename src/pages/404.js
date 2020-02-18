@@ -12,10 +12,11 @@ const NotFound = styled.div`
 
   h1 {
     max-width: 250px;
-    margin-top: -20px;
+    margin-top: -30px;
     margin-bottom: 20px;
     color: var(--purple-eight);
-    font-size: 90px;
+    font-size: 120px;
+    font-family: var(--secondary-font);
   }
 
   h2 {
@@ -28,15 +29,15 @@ const NotFound = styled.div`
 
   h3 {
     color: var(--blue-grey-three);
-    font-size: 24px;
-    margin-top: -20px;
-    padding-bottom: 25px;
+    font-size: 18px;
+    margin-top: -15px;
+    //padding-bottom: 25px;
   }
 
   h4 {
     color: var(--blue-grey-three);
     font-size: 16px;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   p {
