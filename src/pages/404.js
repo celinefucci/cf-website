@@ -12,10 +12,10 @@ const NotFound = styled.div`
 
   h1 {
     max-width: 250px;
-    margin-top: -30px;
+    margin-top: -35px;
     margin-bottom: 20px;
     color: var(--purple-eight);
-    font-size: 120px;
+    font-size: 130px;
     font-family: var(--secondary-font);
   }
 
@@ -30,7 +30,7 @@ const NotFound = styled.div`
   h3 {
     color: var(--blue-grey-three);
     font-size: 18px;
-    margin-top: -15px;
+    margin-top: -20px;
     //padding-bottom: 25px;
   }
 
@@ -43,7 +43,7 @@ const NotFound = styled.div`
   p {
       color: var(--blue-grey-five);
       line-height: 1.5;
-      margin-top: -10px;
+      margin-top: -12px;
   }
 
   .right-arrow {
@@ -83,7 +83,7 @@ const NotFoundPage = () => (
             <h2>error</h2>
             <h1>404</h1>
             
-            <h3>This page doesn't exist</h3>
+            <h3>This page doesn't exist.</h3>
 
             <p>
               Did you mistype the address? If not, the page may have been deleted, moved, or renamed.
