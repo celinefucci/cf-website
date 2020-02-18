@@ -25,12 +25,13 @@ const NotFound = styled.div`
     text-transform: uppercase;
     letter-spacing: .05em;
     margin-top: 40px;
+    font-family: var(--secondary-font);
   }
 
   h3 {
     color: var(--blue-grey-three);
     font-size: 18px;
-    margin-top: -20px;
+    margin-top: -15px;
     //padding-bottom: 25px;
   }
 
@@ -38,6 +39,8 @@ const NotFound = styled.div`
     color: var(--blue-grey-three);
     font-size: 16px;
     padding-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
   }
 
   p {
@@ -68,7 +71,7 @@ const NotFound = styled.div`
   }
 
   li {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     font-size: 14px;
     color: var(--blue-grey-five);
   }
@@ -89,7 +92,7 @@ const NotFoundPage = () => (
               Did you mistype the address? If not, the page may have been deleted, moved, or renamed.
             </p>
 
-            <h4>Let's Get You Back On Track:</h4>
+            <h4>Get Back On Track</h4>
 
             <ul>
               <li>
