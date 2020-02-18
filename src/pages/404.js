@@ -40,7 +40,8 @@ const NotFound = styled.div`
     font-size: 16px;
     padding-top: 30px;
     text-transform: uppercase;
-    letter-spacing: .05em;
+    letter-spacing: .03em;
+    margin-bottom: 12px;
   }
 
   p {
@@ -92,7 +93,7 @@ const NotFoundPage = () => (
               Did you mistype the address? If not, the page may have been deleted, moved, or renamed.
             </p>
 
-            <h4>Get Back On Track</h4>
+            <h4>Get Back On Track:</h4>
 
             <ul>
               <li>
