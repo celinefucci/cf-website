@@ -3,10 +3,7 @@ import styled from "styled-components"
 import "../styles/palette.scss"
 
 const FooterWrapper = styled.footer`
-
-  @media (max-width: 768px) {
-    min-height: 13vh;
-  }
+  min-height: 13vh;
 
   margin: 0 auto;
   max-width: 960;
@@ -29,12 +26,23 @@ const FooterText = styled.div`
   font-weight: 300;
 `
 
+const FooterQuery = styled.div`
+  @media (min-width: 575px) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+`
+
 const Footer = () => (
-  <FooterWrapper>
-    <FooterText>
-      Celine Fucci © 2020 
-    </FooterText>
-  </FooterWrapper>
+  <FooterQuery>
+    <FooterWrapper>
+      <FooterText>
+        Celine Fucci © 2020 
+      </FooterText>
+    </FooterWrapper>
+  </FooterQuery>
 )
 
 export default Footer

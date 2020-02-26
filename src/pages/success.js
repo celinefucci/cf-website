@@ -96,7 +96,7 @@ const SuccessPage = () => (
 
               <li>
                 <FontAwesomeIcon icon={['fas', 'arrow-right']} size="md" className="fa-fw right-arrow" />
-                <Link to="/music">Playlists</Link>
+                <Link to="/music">Mixtapes</Link>
               </li>
 
             </ul>

@@ -10,11 +10,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const NavWrapper = styled.nav`
     // TODO - Media query
 
-    @media (max-width: 768px) {
-      min-height: 35vh;
-    }
+    
 
-    //@media (max-width: 768px) {
+  
         display: flex;
         justify-content: space-around;
 
@@ -64,7 +62,15 @@ const NavWrapper = styled.nav`
           margin-top: auto;
           
         }
-    //}
+
+
+        // Media Queries
+        @media (min-width: 575px) {
+          width: 700px;
+          margin-left: auto;
+          margin-right: auto;
+          min-height: 35vh;
+        }
 `
 
 const NavLine = styled.hr`
@@ -73,6 +79,10 @@ const NavLine = styled.hr`
   height: 1px;
   border: 0;
   background-color: var(--blue-grey-eight);
+
+  @media (min-width: 575px) {
+    width: 700px;
+  }
 `
 
 const Nav = () => (

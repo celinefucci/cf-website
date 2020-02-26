@@ -14,6 +14,17 @@ const HeaderWrapper = styled.header`
   display: flex;    
   flex-direction: row;
   justify-content: space-between;
+
+  // Greater than 645
+  @media (min-width: 575px) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Min-width = rules applied for any browser width greater than the value defined in the query
+  // Max-width = rules applied for any browser width less than the value defined in the query
+
 `
 
 const Headline = styled.div`

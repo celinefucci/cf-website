@@ -179,16 +179,36 @@ ol {
       list-style: none;
       line-height: 1.8;
   }
+
+
+  @media (min-width: 575px) {
+
+    h1, h2, h4, p, .tools, section, ol, ul, hr {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+
+    .bm-container-2, .bm-container-3, .bm-container-4, h4 {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .bm-video {
+      width: 500px;
+      height: 400px;
+    }
 `
 
 const Banner = () => (
     <Layout id="top">
           <SEO title="Banner Mobile" />
-          <BannerWrapper>
-              <Link to="/work/">
+          <Link to="/work/">
                 <BackButton />
-              </Link>
-            
+          </Link>
+          <BannerWrapper>
             <h1>Banner Mobile App</h1>
             
             <div className="tools">
@@ -198,13 +218,11 @@ const Banner = () => (
                 <span>HTML</span>
             </div>
 
-
-            <a href={bannerProposal} className="social-text">Project Brief<FontAwesomeIcon icon={['fas', 'file-download']} size="md" className="fa-fw doc-icon" /></a>
-
-            <a href="https://github.com/celinefucci/banner-mobile" className="social-text">View Code<FontAwesomeIcon icon={['fab', 'github']} size="md" className="fa-fw social-icon" /></a>
-
-
-
+            <section>
+              <a href={bannerProposal} className="social-text">Project Brief<FontAwesomeIcon icon={['fas', 'file-download']} size="md" className="fa-fw doc-icon" /></a>
+              <a href="https://github.com/celinefucci/banner-mobile" className="social-text">View Code<FontAwesomeIcon icon={['fab', 'github']} size="md" className="fa-fw social-icon" /></a>
+            </section>
+            
             <h2>Overview</h2>
             <p>
                 Banner Mobile is an application that allows users to easily view registration information for a subset of classes at the State University of New York (SUNY) Polytechnic Institute. One of its main goals is to simplify the information found in the current Banner Web system.
@@ -219,9 +237,15 @@ const Banner = () => (
             <p>
                 The current Banner Web System is outdated and cluttered. The system is difficult to navigate and inefficient, causing frustration for students who want to quickly view the classes they need to take each semester. Overall, searching for classes is time consuming and forces students to navigate through a series of screens. The challenge I set out to solve was to not only make a mobile version of this system, but to simplify the experience for students.
             </p>
-            <div style={{ maxWidth: `450px` }}>
-                <Image filename="bmsketch2.jpg" alt="Mobile App Sketches" />
-            </div>
+
+           
+
+            <section>
+              <div style={{ maxWidth: `450px` }} className="bm-container-2">
+                  <Image filename="bmsketch2.jpg" alt="Mobile App Sketches" />
+              </div>
+            </section>
+            
             <h4>More Sketches Regarding My Plan for the UI</h4>
 
             <h2>Expectations</h2>
@@ -232,9 +256,11 @@ const Banner = () => (
                 My second expectation was more challenging because it involved extracting data from a database and I wasn't all too familiar with database development. Therefore, during my research, I aimed to find the easiest tool to use and learn within a few weeks.
             </p>
             
-            <div style={{ maxWidth: `450px` }}>
-                <Image filename="firebase.png" alt="Database Image" />
-            </div>
+            <section>
+              <div style={{ maxWidth: `450px` }} className="bm-container-3">
+                  <Image filename="firebase.png" alt="Database Image" />
+              </div>
+            </section>
             <h4 className="caption-two">A Snapshot of Firebase Data</h4>
             <hr />
 
@@ -270,7 +296,9 @@ const Banner = () => (
             {/* <div style={{ maxWidth: `450px` }}>
                 <Image filename="kyrSol1.png" alt="Database Image" />
             </div> */}
-            <iframe style={{ margin: `0 auto` }} width="300" height="315" src="https://www.youtube.com/embed/LfKXKluJyIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <section className="bm-container-4">
+              <iframe style={{ margin: `0 auto` }} width="300" height="315" className="bm-video" src="https://www.youtube.com/embed/LfKXKluJyIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
             <h4 className="caption-two">Final Product Video</h4>
             <hr />
             

@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import "../styles/palette.scss"
+import BackButton from "../components/back"
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -67,7 +69,7 @@ const ContactDetails = styled.div`
          transition: all 0.2s ease 0s;
      }
 
-    button {
+    .spotify-button {
         color: var(--teal-six);
         background-color: transparent;
         border: 1px solid var(--teal-six);
@@ -79,7 +81,7 @@ const ContactDetails = styled.div`
         cursor: pointer;
         transition: all 0.2s ease 0s;
         font-weight: bold;
-        width: 100%;
+        max-width: 100%;
     }
 
     button:hover {
@@ -108,108 +110,32 @@ const ContactDetails = styled.div`
     }
 
 
-    // Media Queries - Large
-  @media all and (min-width: 1000px) {
-    .flex-container {
-      display: flex;
+    // Media Queries
+    @media (min-width: 575px) {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
 
-      .heading-one {
+      .heading-one, .heading-two, .heading-three {
         max-width: 100%;
       }
 
-      hr {
-        display: none;
-      }
-
-      .heading-two {
-        max-width: 100%;
-        margin-top: 0;
-        padding-top: 46.5px;
-      }
-
-      .column-1 {
-        width: 50%;
-        margin-left: 130px;
-      }
-  
-      .column-2 {
-        width: 50%;
-        //margin-left: 50px;
-        margin-top: 0;
-      }
-  
-      button {
+      .spotify-button {
         display: block;
-        max-width: 70%;
       }
 
     }
 
     
-    .heading-three {
-      max-width: 100%;
-      text-align: center;
-    }
-
-
-  }
-
-  // Not smaller than 750
-  @media all and (min-width: 650px) and (max-width: 1000px) {
-    .flex-container {
-      display: flex;
-
-      .heading-one {
-        max-width: 100%;
-      }
-
-      hr {
-        display: none;
-      }
-
-      .heading-two {
-        max-width: 100%;
-        margin-top: 0;
-        padding-top: 46.5px;
-      }
-
-      .column-1 {
-        width: 50%;
-        //margin-left: 30px;
-      }
-  
-      .column-2 {
-        width: 50%;
-        margin-right: 0px;
-        margin-top: 0;
-        padding-left: 50px;
-      }
-  
-      button {
-        display: block;
-        max-width: 75%;
-      }
-
-    }
-
-    .heading-three {
-      max-width: 100%;
-      text-align: center;
-    }
-
-  }
-
-  @media all and (min-width: 450px) and (max-width: 650px) {
-    button {
-      max-width: 45%;
-    }
-  }
 
 `
 
 const ContactInfo = () => (
   // Make the a href a button tag?
   <ContactDetails>
+    <Link to="/">
+        <BackButton />
+    </Link>
 
   <div className="flex-container">
 
@@ -241,7 +167,7 @@ const ContactInfo = () => (
 
         <Link to="/music/">
             <button className="spotify-button">
-                View Playlists
+                View Mixtapes
                 <FontAwesomeIcon
                 icon={["fab", "spotify"]}
                 size="lg"

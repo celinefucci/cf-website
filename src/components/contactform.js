@@ -103,61 +103,13 @@ const Form = styled.form`
       margin-top: 1px;
     }
 
-
-
-
     // Media Queries
-    @media all and (min-width: 1000px) {
-      .b {
-        max-width: 50%;
-        margin: 0 auto;
-        margin-bottom: 15px;
-      }
-
-      .send-button {
-        //display: inline-block;
-        max-width: 40%;
-      }
-
-      button[type=submit] {
-        display: block;
-        margin: 0 auto;
-      }
-
-      .send-icon {
-        margin-left: 5px;
-      }
-
+    @media (min-width: 575px) {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    @media all and (min-width: 650px) and (max-width: 1000px) {
-      .b {
-        max-width: 80%;
-        margin: 0 auto;
-        margin-bottom: 15px;
-      }
-
-      .send-button {
-        //display: inline-block;
-        max-width: 40%;
-      }
-
-      button[type=submit] {
-        display: block;
-        margin: 0 auto;
-      }
-
-      .send-icon {
-        margin-left: 5px;
-      }
-    }
-
-    @media all and (min-width: 450px) and (max-width: 650px) {
-      .send-button {
-        //display: inline-block;
-        max-width: 45%;
-      }
-    }
 `
 
 const ContactForm = () => (

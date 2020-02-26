@@ -19,20 +19,29 @@ const TopButton = styled.button`
     padding: 10px;
     cursor: pointer;
     float: right;
-    margin-top: 10px;
+    margin-top: 20px;
     
     // TODO: dotted border
     #top {
         outline: none !important;
     }
+`
 
+const TopQuery = styled.div`
+  @media (min-width: 575px) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 const Top = () => (
     <a href="#top">
-        <TopButton className="hi">
-            <FontAwesomeIcon icon={['fas', 'arrow-up']} size="md" className="fa-fw" />
-        </TopButton>
+        <TopQuery>
+            <TopButton>
+                <FontAwesomeIcon icon={['fas', 'arrow-up']} size="md" className="fa-fw" />
+            </TopButton>
+        </TopQuery>
     </a>
 )
 

@@ -26,7 +26,7 @@ const AboutWrapper = styled.div`
     font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   .story {
@@ -58,30 +58,38 @@ const AboutWrapper = styled.div`
   }
 
   .about-picture {
-    max-width: 200px;
+    max-width: 412px;
     margin: 0 auto;
+    margin-top: 10px;
   }
 
 
-  // // Media Queries
-  // @media all and (min-width: 50em) {
-  //   h1 {
-  //     max-width: 100%;
-  //   }
-  //   .intro-header {
-  //     float: right;
-  //     order: 1;
-  //   }
-  //   .intro-text {
-  //     float: right;
-  //     width: 50%;
-  //     order: 2;
-  //   } 
-  //   .about-picture {
-  //     float: left;
-  //     //max-width: 450px;
-  //   }
-  // }
+  // Min-width = rules applied for any browser width greater than the value defined in the query
+  // Max-width = rules applied for any browser width less than the value defined in the query
+  @media (min-width: 575px) {
+
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1 {
+        max-width: 100%;
+      }
+
+      .about-picture {
+        margin-top: 20px;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      .story {
+        margin-top: 40px;
+      }
+
+  }
+
 `
 
 const AboutHeading = styled.h2`
@@ -126,9 +134,11 @@ const AboutPage = () => (
       </AboutText>
     </AboutWrapper>
 
-    <div className="about-picture">
-      <Image filename="about4.JPG" alt="Profile Picture" />
-    </div>
+    <AboutWrapper>
+      <div className="about-picture">
+        <Image filename="about3.JPG" alt="Profile Picture" />
+      </div>
+    </AboutWrapper>
 
     <AboutWrapper>
       <h4>Churros are awesome.</h4>

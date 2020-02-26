@@ -20,14 +20,26 @@ const BackButton = styled.button`
     cursor: pointer;
     margin-top: 20px;
 
+    @media (min-width: 575px) {
+       // max-width: 700px;
+    }
+
+`
+
+const BackQuery = styled.div`
+  @media (min-width: 575px) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 const Back = () => (
-
-    <BackButton>
-        <FontAwesomeIcon icon={['fas', 'arrow-left']} size="md" className="fa-fw" />
-    </BackButton>
- 
+    <BackQuery>
+        <BackButton>
+            <FontAwesomeIcon icon={['fas', 'arrow-left']} size="md" className="fa-fw" />
+        </BackButton>
+    </BackQuery>
 )
 
 export default Back

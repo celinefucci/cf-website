@@ -97,21 +97,44 @@ div {
    // background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
 }
 
+// Greater than 575
+  @media (min-width: 575px) {
+    
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .kyr-image {
+      width: 500px;
+      //margin-left: 0;
+    }
+
+    .project-button {
+      //width: 75%;
+    }
+
+    .bm-image {
+      width: 200px;
+    }
+
+  }
+
 `
 
 const WorkPage = () => (
     <Layout>
         <SEO title="Projects" />
         <Social />
-        <Link to="/" style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem` }}>
-          <BackButton />
-        </Link>
+        
         <WorkWrapper>
+            <Link to="/">
+                <BackButton />
+            </Link>
             <h1>projects</h1>
             <h2>Know Your Rights</h2>
             <h3>Mobile App, UI Design</h3>
 
-            <div style={{ maxWidth: `90%` }}>
+            <div style={{ maxWidth: `90%` }} className="kyr-image">
                 <Link to="/kyr/">
                     <Image filename="kyr1.png" alt="Mobile App Intro Screens" />
                 </Link>
@@ -134,7 +157,7 @@ const WorkPage = () => (
             <h2>Banner Mobile</h2>
             <h3>Mobile App, UI Design + Database</h3>
 
-            <div style={{ maxWidth: `50%` }}>
+            <div style={{ maxWidth: `50%` }} className="bm-image">
                 <Link to="/bm/">
                     <Image filename="bm3.png" alt="Mobile App Intro Screen" />
                 </Link>
@@ -150,9 +173,7 @@ const WorkPage = () => (
                     />
                 </button>
             </Link>
-            <div style={{ paddingTop: `1.0875rem` }}>
-              <TopButton />
-            </div>
+            <TopButton />
         </WorkWrapper>
         
     </Layout>      

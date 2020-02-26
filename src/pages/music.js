@@ -21,6 +21,14 @@ const MusicIntro = styled.p`
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 8px;
+
+    @media (min-width: 575px) {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+
+    }
 `
 
 const MusicSecondary = styled.p`
@@ -28,6 +36,13 @@ const MusicSecondary = styled.p`
     padding-left: 1.0875rem;
     padding-right: 1.0875rem;
     margin-top: 0;
+
+    @media (min-width: 575px) {
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
 `
 
 const MusicPage = () => (
@@ -38,7 +53,7 @@ const MusicPage = () => (
     <Link to="/contact/" style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem` }}>
       <BackButton />
     </Link>
-
+    
     <MusicIntro>listen & share</MusicIntro>
     <MusicSecondary>Click or tap on a card to begin.</MusicSecondary>
 
