@@ -166,9 +166,9 @@ ol {
   }
 
 
-  @media (min-width: 575px) {
+  @media (min-width: 800px) {
 
-      width: 700px;
+      width: 800px;
       margin-left: auto;
       margin-right: auto;
       

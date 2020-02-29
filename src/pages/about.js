@@ -66,9 +66,9 @@ const AboutWrapper = styled.div`
 
   // Min-width = rules applied for any browser width greater than the value defined in the query
   // Max-width = rules applied for any browser width less than the value defined in the query
-  @media (min-width: 575px) {
+  @media (min-width: 800px) {
 
-      width: 700px;
+      width: 800px;
       margin-left: auto;
       margin-right: auto;
 

@@ -62,8 +62,8 @@ const NavWrapper = styled.nav`
 
 
         // Media Queries
-        @media (min-width: 575px) {
-          width: 700px;
+        @media (min-width: 800px) {
+          width: 800px;
           margin-left: auto;
           margin-right: auto;
           min-height: 35vh;
@@ -77,8 +77,8 @@ const NavLine = styled.hr`
   border: 0;
   background-color: var(--blue-grey-eight);
 
-  @media (min-width: 575px) {
-    width: 700px;
+  @media (min-width: 800px) {
+    width: 764px;
   }
 `
 

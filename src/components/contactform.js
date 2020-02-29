@@ -104,10 +104,15 @@ const Form = styled.form`
     }
 
     // Media Queries
-    @media (min-width: 575px) {
-      width: 700px;
+    @media (min-width: 800px) {
+      width: 800px;
       margin-left: auto;
       margin-right: auto;
+
+      p .send-button {
+        max-width: 40%;
+        margin: 0 auto;
+      }
     }
 
 `

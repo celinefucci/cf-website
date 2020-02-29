@@ -15,15 +15,19 @@ const HeaderWrapper = styled.header`
   flex-direction: row;
   justify-content: space-between;
 
-  // Greater than 645
-  @media (min-width: 575px) {
-    width: 700px;
+  // Greater than 800
+  @media (min-width: 800px) {
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   // Min-width = rules applied for any browser width greater than the value defined in the query
   // Max-width = rules applied for any browser width less than the value defined in the query
+
+  
 
 `
 
@@ -34,6 +38,7 @@ const Headline = styled.div`
   h1 {
     margin: 0;
   }
+  
 `
 
 const StyledLink = styled(Link)`
@@ -43,6 +48,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   border-bottom: 2px solid var(--purple-six);
   padding-bottom: 5px;
+  
 `
 
 const ResumeButton = styled.button`
@@ -73,6 +79,9 @@ const ResumeButton = styled.button`
         margin-left: 5px;
         color: var(--blue-grey-three);
     }
+    
+  }
+    
 `
 
 const Header = ({ siteTitle }) => (

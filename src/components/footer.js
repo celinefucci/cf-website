@@ -27,8 +27,8 @@ const FooterText = styled.div`
 `
 
 const FooterQuery = styled.div`
-  @media (min-width: 575px) {
-    width: 700px;
+  @media (min-width: 800px) {
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
