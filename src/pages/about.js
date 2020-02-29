@@ -162,9 +162,9 @@ const AboutPage = () => (
         most passionate about.
       </AboutText>
       <AboutText className="last-p">
-        As for some of my interests, I love music, which is why I dedicated a portion of this site to featuring my playlists.
-        I'm also learning how to DJ. Other than that, I love to work out. I'm actually glad I do
-        because I have a serious problem avoiding desserts, in case you haven't noticed from the picture above.
+        As for some of my interests, I love music...a lot. I'm currently learning how to DJ. 
+        Other than that, I love to work out. I'm actually glad I do
+        because I'm a major foodie and I have a serious problem avoiding desserts, in case you haven't noticed from the picture above.
       </AboutText>
       
       <div>

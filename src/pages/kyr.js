@@ -111,12 +111,11 @@ span {
     margin-top: 8px;
   }
 
-  .caption-two {
+  .caption-two, .caption {
+      text-align: center;
       padding-bottom: 20px;
-  }
-
-  .mockups {
-    text-align: center;
+      position: relative;
+      top: 8px;
   }
 
   hr {
@@ -169,72 +168,39 @@ ol {
 
   @media (min-width: 575px) {
 
-    h1, h2, p, .tools, section, ol, ul, hr {
       width: 700px;
       margin-left: auto;
       margin-right: auto;
-      max-width: 100%;
+      
+    
+      h1 {
+        max-width: 100%;
+      }
+
+
+    .kyr-container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden;
     }
 
-    .kyr-container-1 {
-      //margin: 0 auto;
-      //width: 900px;
+    .kyr-container .col {
+      flex: 1;
+      padding: 1%;
     }
 
-    .kyr-sketch-1 {
-      float: left;
-      width: 50%;
-      padding-right: 15px;
+    .caption {
+      text-align: center;
     }
-
-    .kyr-sketch-2 {
-      float: right;
-      width: 50%;
-      padding-left: 15px;
-    }
-
-    .caption-one {
-      position: relative;
-      top: 10px;
-      margin: 0 auto;
-    }
-
-
-
 
     .kyr-container-2 {
-      margin-left: auto;
-      margin-right: auto;
-      // width: 700px;
+      margin: 0 auto;
     }
 
     .caption-two {
       position: relative;
-      top: 10px;
-    }
-
-    
-
-    .kyr-container-3 {
-      //margin: 0 auto;
-      //width: 700px;
-    }
-
-    .kyr-final-1 {
-      float: left;
-      width: 50%;
-      padding-right: 15px;
-    }
-
-    .kyr-final-2 {
-      float: right;
-      width: 50%;
-      padding-left: 15px;
-    }
-
-    .caption-three {
-      position: relative;
-      top: 10px;
+      top: 8px;
       text-align: center;
     }
 
@@ -245,10 +211,11 @@ const KYR = () => (
     <Layout id="top">
           <SEO title="Know Your Rights" />
        
-          <Link to="/work/">
-                <BackButton />
-          </Link>
+          
           <KYRWrapper>
+            <Link to="/work/">
+                  <BackButton />
+            </Link>
             
             <h1>Know Your Rights Mobile App</h1>
             
@@ -269,15 +236,15 @@ const KYR = () => (
                 Know Your Rights is a convenient mobile application specifically tailored for college students attending the State University of New York Polytechnic Institute to view policies, procedures, and other information surrounding the Title IX federal civil rights law. Students can use the app at any time, as long as they are in possession of their mobile device.
             </p>
 
-            <section className="kyr-container-1">
-              <div className="kyr-sketch-1" style={{ maxWidth: `450px` }}>
+            <section className="kyr-container">
+              <div className="col" style={{ maxWidth: `450px` }}>
                 <Image filename="kyrsketch1.jpg" alt="Mobile App Sketches" />
               </div>
-              <div className="kyr-sketch-2" style={{ maxWidth: `450px` }}>
+              <div className="col" style={{ maxWidth: `450px` }}>
                 <Image filename="kyrsketch2.jpg" alt="Mobile App Sketches" />
               </div>
             </section>
-            <h4 className="caption-one">First Sketches of the Know Your Rights App</h4>
+            <h4 className="caption">First Sketches of the Know Your Rights App</h4>
 
             <h2>Challenge</h2>
             <p>
@@ -299,7 +266,7 @@ const KYR = () => (
                   <Image filename="kyr2.png" alt="Mobile App UI Mockups" />
               </div>
             </section>
-            <h4 className="caption-two mockups">UI Mockups Built With Sketch</h4>
+            <h4 className="caption-two">UI Mockups Built With Sketch</h4>
             <hr />
 
             <h2>Process & Experience</h2>
@@ -325,15 +292,15 @@ const KYR = () => (
               Know Your Rights shed a positive light on the Title IX laws on my college campus. It was an effective resource in determining the rights each student had on campus and who they could contact in case of an emergency. Furthermore, it showcased warning signs students should be aware of in sexual assault situations. This project will always be meaningful to me because of the impact it strived to make in the community.
             </p>
 
-            <section className="kyr-container-3">
-              <div style={{ maxWidth: `450px` }} className="kyr-final-1">
+            <section className="kyr-container">
+              <div style={{ maxWidth: `450px` }} className="col">
                   <Image filename="kyrSol1.png" alt="Mobile App Presentation Slides" />
               </div>
-              <div style={{ maxWidth: `450px` }} className="kyr-final-2">
+              <div style={{ maxWidth: `450px` }} className="col">
                   <Image filename="kyrSol2.png" alt="Mobile App Presentation Slides" />
               </div>
             </section>
-            <h4 className="caption-three">Final Presentation Slides</h4>
+            <h4 className="caption">Final Presentation Slides</h4>
             
             <hr />
             

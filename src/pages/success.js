@@ -63,6 +63,18 @@ const SuccessWrapper = styled.div`
     font-size: 14px;
     color: var(--blue-grey-five);
   }
+
+
+  @media (min-width: 575px) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+    h1 {
+      max-width: 100%;
+    }
+  }
 `
 
 const SuccessPage = () => (
@@ -81,7 +93,7 @@ const SuccessPage = () => (
 
               <li>
                 <FontAwesomeIcon icon={['fas', 'arrow-right']} size="md" className="fa-fw right-arrow" />
-                <Link to="/">Homepage</Link>
+                <Link to="/">Home</Link>
               </li>
 
               <li>

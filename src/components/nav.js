@@ -10,13 +10,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const NavWrapper = styled.nav`
     // TODO - Media query
 
-    
-
-  
         display: flex;
         justify-content: space-around;
 
-        min-height: 65vh;
+        min-height: 40vh;
 
         .link-name {
             

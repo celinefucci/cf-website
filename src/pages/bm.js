@@ -102,19 +102,26 @@ span {
     line-height: 1.8;
   }
 
-  .bm-sketch-1 {
-    text-align: center;
-  }
-
   h4 {
     font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
     margin-top: 8px;
+    text-align: center;
+  }
+
+  .banner-container .col {
+    margin: 0 auto;
   }
 
   .caption-two {
       padding-bottom: 20px;
+  }
+
+  .bm-container-4 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   hr {
@@ -183,10 +190,11 @@ ol {
 
   @media (min-width: 575px) {
 
-    h1, h2, h4, p, .tools, section, ol, ul, hr {
-      width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
       max-width: 100%;
     }
 
@@ -200,15 +208,32 @@ ol {
       width: 500px;
       height: 400px;
     }
+
+    .banner-container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .banner-container .col {
+      flex: 1;
+      margin: 0 auto;
+    }
+
+    .bm {
+      padding: 1%;
+    }
 `
 
 const Banner = () => (
     <Layout id="top">
           <SEO title="Banner Mobile" />
-          <Link to="/work/">
-                <BackButton />
-          </Link>
+          
           <BannerWrapper>
+            <Link to="/work/">
+                  <BackButton />
+            </Link>
             <h1>Banner Mobile App</h1>
             
             <div className="tools">
@@ -228,10 +253,20 @@ const Banner = () => (
                 Banner Mobile is an application that allows users to easily view registration information for a subset of classes at the State University of New York (SUNY) Polytechnic Institute. One of its main goals is to simplify the information found in the current Banner Web system.
             </p>
 
-            <div style={{ maxWidth: `200px`, margin: `0 auto` }}>
+            <section className="banner-container">
+              <div className="col bm" style={{ maxWidth: `300px` }}>
+                <Image filename="banner1.jpeg" alt="Mobile App Sketches" />
+              </div>
+              <div className="col bm" style={{ maxWidth: `300px` }}>
+                <Image filename="banner2.jpeg" alt="Mobile App Sketches" />
+              </div>
+            </section>
+            <h4>First Sketches of the Banner Mobile App</h4>
+
+            {/* <div style={{ maxWidth: `200px`, margin: `0 auto` }}>
                 <Image filename="bmsketch1.jpg" alt="Mobile App Sketches" />
-            </div>
-            <h4 className="bm-sketch-1">First Sketches of the Banner Mobile App</h4>
+            </div> */}
+
 
             <h2>Challenge</h2>
             <p>

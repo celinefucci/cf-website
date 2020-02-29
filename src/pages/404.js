@@ -39,7 +39,7 @@ const NotFound = styled.div`
     color: var(--blue-grey-three);
     font-size: 16px;
     padding-top: 30px;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     letter-spacing: .03em;
     margin-bottom: 12px;
   }
@@ -76,6 +76,14 @@ const NotFound = styled.div`
     font-size: 14px;
     color: var(--blue-grey-five);
   }
+
+
+  @media (min-width: 575px) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
   
 `
 
@@ -98,7 +106,7 @@ const NotFoundPage = () => (
             <ul>
               <li>
                 <FontAwesomeIcon icon={['fas', 'arrow-right']} size="md" className="fa-fw right-arrow" />
-                <Link to="/">Homepage</Link>
+                <Link to="/">Home</Link>
               </li>
 
               <li>
