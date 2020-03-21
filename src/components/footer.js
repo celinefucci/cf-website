@@ -3,7 +3,7 @@ import styled from "styled-components"
 import "../styles/palette.scss"
 
 const FooterWrapper = styled.footer`
-  min-height: 16vh;
+  min-height: 12vh;
 
   margin: 0 auto;
   max-width: 960;
