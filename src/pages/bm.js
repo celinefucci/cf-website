@@ -114,6 +114,11 @@ span {
     margin: 0 auto;
   }
 
+  // Creates space between two images
+  .course-details {
+    padding-top: 15px;
+  }
+
   .caption-two {
       padding-bottom: 20px;
   }
@@ -254,14 +259,15 @@ const Banner = () => (
             </p>
 
             <section className="banner-container">
-              <div className="col bm" style={{ maxWidth: `300px` }}>
+              <div className="col bm" style={{ maxWidth: `250px` }}>
                 <Image filename="banner1.jpeg" alt="Mobile App Sketches" />
+                <h4>Home Screen</h4>
               </div>
-              <div className="col bm" style={{ maxWidth: `300px` }}>
+              <div className="col bm course-details" style={{ maxWidth: `250px` }}>
                 <Image filename="banner2.jpeg" alt="Mobile App Sketches" />
+                <h4>Course Details Page</h4>
               </div>
             </section>
-            <h4>First Sketches of the Banner Mobile App</h4>
 
             {/* <div style={{ maxWidth: `200px`, margin: `0 auto` }}>
                 <Image filename="bmsketch1.jpg" alt="Mobile App Sketches" />
@@ -343,7 +349,7 @@ const Banner = () => (
                 <li><img src={check} alt="bullet" className="check-bullet"></img>Research is key</li>
                 <li><img src={check} alt="bullet" className="check-bullet"></img>Extracting data from a database</li>
                 <li><img src={check} alt="bullet" className="check-bullet"></img>When to ask other developers for help</li>
-                <li><img src={check} alt="bullet" className="check-bullet"></img>Creating plans lead to success</li>
+                <li><img src={check} alt="bullet" className="check-bullet"></img>Defining a plan leads to success</li>
             </ul>
             <TopButton />
           </BannerWrapper>

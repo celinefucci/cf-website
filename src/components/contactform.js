@@ -22,7 +22,7 @@ const Form = styled.form`
         margin: 6px 0;
         border: 1px solid var(--blue-grey-eight);
         border-radius: 4px;
-        font-size: 12px;
+        font-size: 14px;
         background-color: var(--blue-grey-nine);
         font-family: var(--secondary-font);
     }
@@ -54,12 +54,39 @@ const Form = styled.form`
         resize: none;
 
         font-family: var(--secondary-font);
-        font-size: 12px;
+        font-size: 14px;
+        box-shadow: none;
     }
 
     textarea:focus {
-        border: 2px solid var(--blue-grey-three);
+       border: 2px solid var(--blue-grey-three);
     }
+
+    // Gets rid of red outline for validation of input and textarea
+    input:invalid {
+      box-shadow: none;
+    }
+
+    input:-moz-submit-invalid {
+      box-shadow: none;
+    }
+
+    input:-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+    textarea:invalid {
+      box-shadow: none;
+    }
+
+    textarea:-moz-submit-invalid {
+      box-shadow: none;
+    }
+
+    textarea:-moz-ui-invalid {
+      box-shadow: none;
+    }
+
 
     button[type=submit] {
         color: var(--purple-six);
@@ -108,7 +135,9 @@ const Form = styled.form`
       width: 800px;
       margin-left: auto;
       margin-right: auto;
+    }
 
+    @media (min-width: 600px) {
       p .send-button {
         max-width: 40%;
         margin: 0 auto;
@@ -135,21 +164,21 @@ const ContactForm = () => (
           <label>
             Your Name
             <br />
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
           </label>
         </p>
         <p className="b">
           <label>
             Your Email
             <br />
-            <input type="email" name="email" />
+            <input type="email" name="email" required />
           </label>
         </p>
         <p className="b">
           <label>
             Message
             <br />
-            <textarea name="message" />
+            <textarea type="input" name="message" required></textarea>
           </label>
         </p>
         {/* TODO - RECAPTCHA */}

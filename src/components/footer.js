@@ -3,11 +3,11 @@ import styled from "styled-components"
 import "../styles/palette.scss"
 
 const FooterWrapper = styled.footer`
-  min-height: 13vh;
+  min-height: 18vh;
 
   margin: 0 auto;
   max-width: 960;
-  padding: 0.6rem 1.0875rem;
+  padding: 0.9rem 1.0875rem;
 
   // Keep in mind vh issue on mobile - Kevin Powell video
   //min-height: 14vh;

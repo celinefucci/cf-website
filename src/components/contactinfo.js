@@ -28,6 +28,15 @@ const ContactDetails = styled.div`
     .heading-three {
         margin-top: 60px;
         max-width: 185px;
+        margin-bottom: 0px;
+    }
+
+    .required {
+      color: var(--blue-grey-three);
+      font-family: var(--secondary-font);
+      font-weight: normal;
+      padding-bottom: 40px;
+      margin-top: 10px;
     }
 
     h3 {
@@ -69,6 +78,10 @@ const ContactDetails = styled.div`
          transition: all 0.2s ease 0s;
      }
 
+     .tunes {
+      font-family: var(--primary-font);
+     }
+
     .spotify-button {
         color: var(--teal-six);
         background-color: transparent;
@@ -84,7 +97,7 @@ const ContactDetails = styled.div`
         max-width: 100%;
     }
 
-    button:hover {
+    .spotify-button:hover {
         color: var(--teal-nine);
         background-color: var(--teal-six);
         //border: none;
@@ -163,7 +176,8 @@ const ContactInfo = () => (
     {/* Column 2 */}
       <div className="column-2">
         <h3 class="heading-two">need some tunes?</h3>
-        <span>Music for designing, writing, coding, and gym time.</span>
+        <div className="tunes">Music for designing, writing, coding, and the gym.</div>
+
 
         <Link to="/music/">
             <button className="spotify-button">
@@ -180,7 +194,8 @@ const ContactInfo = () => (
 
   </div>
 
-  <h3 class="heading-three">ask me a question</h3>
+  <h3 className="heading-three">ask me a question</h3>
+  <h4 className="required">All fields are required.</h4>
   </ContactDetails>
 )
 

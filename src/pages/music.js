@@ -50,9 +50,11 @@ const MusicPage = () => (
 
     <SEO title="Music" />
 
-    <Link to="/contact/" style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem` }}>
-      <BackButton />
-    </Link>
+    <div style={{ paddingLeft: `1.0875rem`, paddingRight: `1.0875rem` }}>
+      <Link to="/contact/">
+        <BackButton />
+      </Link>
+    </div>
     
     <MusicIntro>listen & share</MusicIntro>
     <MusicSecondary>Click or tap on a card to begin.</MusicSecondary>

@@ -13,7 +13,7 @@ const NavWrapper = styled.nav`
         display: flex;
         justify-content: space-around;
 
-        min-height: 40vh;
+        min-height: 35vh;
 
         .link-name {
             

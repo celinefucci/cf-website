@@ -108,7 +108,7 @@ span {
     font-weight: normal;
     font-size: 10px;
     color: var(--blue-grey-three);
-    margin-top: 8px;
+    margin-top: 4px;
   }
 
   .caption-two, .caption {
