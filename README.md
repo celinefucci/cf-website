@@ -1,2 +1,2 @@
-View this site!
+celinefucci.com
 https://www.celinefucci.com/

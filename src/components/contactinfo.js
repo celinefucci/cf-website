@@ -94,7 +94,7 @@ const ContactDetails = styled.div`
         cursor: pointer;
         transition: all 0.2s ease 0s;
         font-weight: bold;
-        max-width: 100%;
+        width: 100%;
     }
 
     .spotify-button:hover {

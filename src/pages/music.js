@@ -27,7 +27,6 @@ const MusicIntro = styled.p`
       margin-left: auto;
       margin-right: auto;
       max-width: 100%;
-
     }
 `
 
