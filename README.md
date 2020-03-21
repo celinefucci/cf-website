@@ -1,5 +1,6 @@
 ### [celinefucci.com](https://www.celinefucci.com/)
 - Celine Fucci © 2020
+- Built with [Gatsby](https://www.gatsbyjs.org/) & [Netlify](https://www.netlify.com/)
 - Fonts: [Inter](https://rsms.me/inter/) & [Inconsolata](https://fonts.google.com/specimen/Inconsolata)
 - Color Palette: [Refactoring UI](https://refactoringui.com/)
 
