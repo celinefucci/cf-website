@@ -17,17 +17,12 @@ const HeaderWrapper = styled.header`
 
   // Greater than 800
   @media (min-width: 800px) {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
   }
 
   // Min-width = rules applied for any browser width greater than the value defined in the query
   // Max-width = rules applied for any browser width less than the value defined in the query
-
-  
 
 `
 

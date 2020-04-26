@@ -63,10 +63,7 @@ const NavWrapper = styled.nav`
 
         // Media Queries
         @media (min-width: 800px) {
-          width: 800px;
-          margin-left: auto;
-          margin-right: auto;
-          min-height: 35vh;
+          //min-height: 35vh;
         }
 `
 

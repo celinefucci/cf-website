@@ -125,10 +125,6 @@ const ContactDetails = styled.div`
 
     // Media Queries
     @media (min-width: 800px) {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-
       .heading-one, .heading-two, .heading-three {
         max-width: 100%;
       }
@@ -138,9 +134,6 @@ const ContactDetails = styled.div`
       }
 
     }
-
-    
-
 `
 
 const ContactInfo = () => (

@@ -100,10 +100,6 @@ div {
 // Greater than 575
   @media (min-width: 800px) {
     
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-
     .kyr-image {
       width: 500px;
       //margin-left: 0;

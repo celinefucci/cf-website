@@ -27,6 +27,7 @@ if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]')
 }
 
+
 const ContentWrapper = styled.div`
   margin: 0 auto;
   max-width: 960;

@@ -66,11 +66,6 @@ const SuccessWrapper = styled.div`
 
 
   @media (min-width: 800px) {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-
     h1 {
       max-width: 100%;
     }

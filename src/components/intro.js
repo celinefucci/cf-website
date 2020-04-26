@@ -54,7 +54,6 @@ const Intro = () => (
     <IntroText>
         <h1>I'm Celine</h1>
         <h4>UI Designer & Creative Technologist</h4>
-        {/* <p>Through my work, I strive to help others, learn new things every day, and be a productive asset to a team</p> */}
     </IntroText>
 )
 

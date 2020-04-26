@@ -131,12 +131,6 @@ const Form = styled.form`
     }
 
     // Media Queries
-    @media (min-width: 800px) {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     @media (min-width: 600px) {
       p .send-button {
         max-width: 40%;

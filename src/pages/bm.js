@@ -195,10 +195,6 @@ ol {
 
   @media (min-width: 800px) {
 
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-
     h1 {
       max-width: 100%;
     }

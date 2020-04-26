@@ -27,21 +27,11 @@ const TopButton = styled.button`
     }
 `
 
-const TopQuery = styled.div`
-  @media (min-width: 800px) {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-`
-
 const Top = () => (
     <a href="#top">
-        <TopQuery>
-            <TopButton>
-                <FontAwesomeIcon icon={['fas', 'arrow-up']} size="md" className="fa-fw" />
-            </TopButton>
-        </TopQuery>
+        <TopButton>
+            <FontAwesomeIcon icon={['fas', 'arrow-up']} size="md" className="fa-fw" />
+        </TopButton>
     </a>
 )
 

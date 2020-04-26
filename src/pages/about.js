@@ -68,10 +68,6 @@ const AboutWrapper = styled.div`
   // Max-width = rules applied for any browser width less than the value defined in the query
   @media (min-width: 800px) {
 
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-
       h1 {
         max-width: 100%;
       }

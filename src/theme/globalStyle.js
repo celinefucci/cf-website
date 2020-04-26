@@ -2,8 +2,16 @@ import { createGlobalStyle } from "styled-components"
 import "../styles/palette.scss"
 
 export const GlobalStyle = createGlobalStyle`
+    html {
+        @media (min-width: 800px) {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }    
+
     * {
-        box-sizing: border-box;
+            box-sizing: border-box;
     }
 
     body {

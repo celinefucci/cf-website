@@ -166,18 +166,11 @@ ol {
   }
 
 
-  @media (min-width: 800px) {
-
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      
-    
+  @media (min-width: 800px) {    
       h1 {
         max-width: 100%;
       }
-
-
+      
     .kyr-container {
       display: -webkit-flex;
       display: -ms-flexbox;

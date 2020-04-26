@@ -21,13 +21,6 @@ const MusicIntro = styled.p`
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 8px;
-
-    @media (min-width: 800px) {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 100%;
-    }
 `
 
 const MusicSecondary = styled.p`
@@ -35,13 +28,6 @@ const MusicSecondary = styled.p`
     padding-left: 1.0875rem;
     padding-right: 1.0875rem;
     margin-top: 0;
-
-    @media (min-width: 800px) {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 100%;
-    }
 `
 
 const MusicPage = () => (
